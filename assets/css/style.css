@@ -1,0 +1,17 @@
+body {
+    max-width: 1800px;
+    background: url("../images/ahri.jpg") no-repeat;
+    background-size: cover;
+    background-color: paleturquoise;
+}
+
+h2 {
+    text-align: center;
+}
+
+.introduction {
+    max-width: 700px;
+    margin: 200px auto 100px;
+    padding: 40px;
+    background-color: rgba(233, 238, 240, 0.8);
+}
