@@ -20,6 +20,10 @@ h1, h2 {
     text-transform: uppercase;
 }
 
+header {
+    margin: 30px;
+}
+
 h1 a {
     text-decoration: none;
     color: rgb(189 168 164);
@@ -27,13 +31,33 @@ h1 a {
 
 h2 {
     text-align: center;
+    padding-bottom: 30px;
+    color: rgb(19, 28, 54);
 }
 
-.introduction {
+.introduction,
+.quiz-area {
     max-width: 700px;
     margin: 200px auto 100px;
     padding: 40px;
     background-color: rgba(233, 238, 240, 0.8);
     letter-spacing: 0.1rem;
     text-align: justify;
+}
+
+div .ready {
+    text-align: center;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(31 41 72);
+}
+
+button a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    line-height: 2rem;
+    color: rgb(216, 201, 198);
 }
