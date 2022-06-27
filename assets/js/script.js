@@ -1,21 +1,18 @@
 // Credit to Love Maths essentials walkthrough for page load event listener code
 // Ensure quiz begins running after page finishes loading
 document.addEventListener("DOMContentLoaded", function() {
-  let buttons = document.getElementById("button");
+  let buttons = document.getElementsByClass("quiz-btn");
   for (let button of buttons) {
     button.addEventListener("click", function() {
         if (this.getAttribute("data-type") === "submit") {
             checkAnswer();
-        } else if (this.getAttribute("data-type") === "next") {
-            checkAnswer();
         } else {
-            runQuiz();
+            addToScore();
         }
  
 })}})
 
-
-runQuiz(); {
+// Using arrays for the questions allows us to iterate over the questions
     let quizArea = [
         {
             question: "The great Empire of Shurima was destroyed after which Champion betrayed the Emperor?",
@@ -219,7 +216,7 @@ runQuiz(); {
         }
     ];
 
-}
+
 
 checkAnswer()
 
