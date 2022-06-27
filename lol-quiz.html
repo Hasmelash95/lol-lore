@@ -12,21 +12,16 @@
         <h1><a href="index.html">League of Legends Lore</a></h1>
     </header>
     <div class="quiz-area">
-        <div class="question" data-type="question">
+        <div id="question" data-type="question">
 
         </div>
-        <div>
-            <input type="radio" data-type="multiple" id="one" class="multiple">
-            <label for="one"></label>
-            <input type="radio" data-type="multiple" id="two" class="multiple">
-            <label for="two"></label>
-            <input type="radio" data-type="multiple" id="three" class="multiple">
-            <label for="three"></label>
-            <input type="radio" data-type="multiple" id="four" class="multiple">
-            <label for="four"></label>
+        <div id="answers" data-type="answer">
+           
         </div>
-        <button data-type="submit" class="submit">Submit</button>
+        <button data-type="submit" id="submit">Submit</button>
+        <button data-type="next" id="next">Next Question</button>
     </div>
+    <div id="score-area"></div>
 
     <script src="assets/js/script.js"></script>
 </body>
