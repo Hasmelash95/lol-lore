@@ -48,7 +48,7 @@ runQuiz(); {
             trueAnswer: "4"
         },
         {
-            question: "Who wields the sentien darkin weapon, Raast?",
+            question: "Who wields the sentient darkin weapon, Raast?",
             answers: {
                 1: "Kayn",
                 2: "Varus",
@@ -117,11 +117,109 @@ runQuiz(); {
             },
             trueAnswer: "4"
         },
-    ]
+        {
+            question: "Who are the masters of the creatures of the Void?",
+            answers: {
+            1: "The Watchers",
+            2: "The Aspects",
+            3: "The Black Rose",
+            4: "The Darkin",    
+            },
+            trueAnswer: "1"
+        },
+        {
+            question: "What was the name of the cataclysm that merged the spirit and material realms together in the Blessed Isles?",
+            answers: {
+                1: "Rune Wars",
+                2: "Ruination",
+                3: "Void War",
+                4: "Fall of Shurima",
+            },
+            trueAnswer: "2"
+        },
+        {
+            question: "What is the term 'darkin' roughly translated to in the old tongue?",
+            answers: {
+                1: "The fallen",
+                2: "The righteous",
+                3: "The malevolent",
+                4: "The lost",
+            },
+            trueAnswer: "1"
+        },
+        {
+            question: "Jericho Swain embodies which of the three Principles of Strength as a member of the Trifarix?",
+            answers: {
+                1: "Might",
+                2: "Guile",
+                3: "Vision",
+                4: "Mercy",
+            },
+            trueAnswer: "3"
+        },
+        {
+            question: "To erase the memory of siphoning the essence of her lover, who did Ahri seek out?",
+            answers: {
+                1: "The Kinkou",
+                2: "The Order of the Shadow",
+                3: "The Witch Gardener",
+                4: "The Golden Demon",
+            },
+            trueAnswer: "3"
+        },
+        {
+            question: "How does the demon Evelynn draw her power?",
+            answers: {
+                1: "Deception",
+                2: "Inflicting pain",
+                3: "Bargains",
+                4: "Love",
+            },
+            trueAnswer: "2"
+        },
+        {
+            question: "What is the name of the white stone the city of Demacia is built on?",
+            answers: {
+                1: "Quartzite",
+                2: "Marble",
+                3: "Granite",
+                4: "Petricite",
+            },
+            trueAnswer: "4"
+        },
+        {
+            question: "What deity does Illaoi serve?",
+            answers: {
+                1: "Nagakabouros",
+                2: "Aurelian Sol",
+                3: "Kayle",
+                4: "Soraka",
+            },
+            trueAnswer: "1"
+        },
+        {
+            question: "What justification did the Solari give for denouncing Diana?",
+            answers: {
+                1: "Her heresy",
+                2: "Her betrayal",
+                3: "Her evil heart",
+                4: "Her lack of interest",
+            },
+            trueAnswer: "1"
+        },
+        {
+            question: "What IS Amumu?",
+            answers: {
+                1: "A warlord",
+                2: "An ancient Emperor",
+                3: "A popstar",
+                4: "A sad mummy",
+            },
+            trueAnswer: "4"
+        }
+    ];
 
 }
-
-startQuiz()
 
 checkAnswer()
 
