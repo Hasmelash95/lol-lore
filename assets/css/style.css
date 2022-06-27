@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Open+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
 body {
     max-width: 1800px;
     background: url("../images/ahri.jpg") no-repeat;
     background-size: cover;
-    background-color: paleturquoise;
+    background-color:  rgb(31 41 72);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2 {
+    font-family: "Bitter", serif;
+    text-transform: uppercase;
+}
+
+h1 a {
+    text-decoration: none;
+    color: rgb(189 168 164);
 }
 
 h2 {
@@ -14,4 +34,6 @@ h2 {
     margin: 200px auto 100px;
     padding: 40px;
     background-color: rgba(233, 238, 240, 0.8);
+    letter-spacing: 0.1rem;
+    text-align: justify;
 }
