@@ -222,31 +222,35 @@ let scoreArea = document.getElementById("score-area");
         }
     ];
 
-function runQuiz(){
-
-function displayData(questions, quizArea) {
+function displayData() {
     // This variable will contain all the data displayed on the page
     let output = [];
-    let answers;
+   
 
     // This applies to each question in the array
-    for (let i = 0; i < questions.length; i++) {
-        answers = [];
+    quizData.forEach(
+        (currentQuestion, questionNumber) => {
 
-        for (letter in questions[i].answers) {
+            let answers = [];
+
+        for (letter in currentQuestion.answers) {
+
             answers.push(`<label>
-            <input type="radio" name="question${questions[i]}" value="${letter}">
-            ${letter} : ${questions[i].answers[letter]}
+            <input type="radio" name="question${questionNumber}" value="${letter}">
+            ${letter} : ${currentQuestion.answers[letter]}
             </label>`);
         }
 
         output.push(
-            `<div class="question"> ${questions[i].question} </div>
+            `<div class="question"> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join("")} </div>`
           );
     }
+    );
 
     quizArea.innerHTML = output.join("")
+
+    displayData();
 }
 
 function checkAnswer()
@@ -257,7 +261,7 @@ function addToScore()
 
 function totalScore()
 
-}
+
 
 
 
