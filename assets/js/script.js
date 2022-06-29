@@ -7,224 +7,257 @@ document.addEventListener("DOMContentLoaded", function() {
         if (this.getAttribute("data-type") === "submit") {
             checkAnswer();
         } else {
-            addToScore();
+            alert("Check answer by submitting!");
         }
  
 })}})
 
+// To get elements from the html
+let quizArea = document.getElementById("quiz-area");
+let submitButton = document.getElementById("submit");
+let nextButton = document.getElementById("next");
+let scoreArea = document.getElementById("score-area");
+
 // Using arrays for the questions allows us to iterate over the questions
-    let quizArea = [
+    let quizData = [
         {
             question: "The great Empire of Shurima was destroyed after which Champion betrayed the Emperor?",
             answers: {
-                1: "Sivir",
-                2: "Nasus",
-                3: "Xerath",
-                4: "Renekton",
+                a: "Sivir",
+                b: "Nasus",
+                c: "Xerath",
+                d: "Renekton",
             }, 
-            trueAnswer: "3"
+            trueAnswer: "c"
         },
         {
             question: "Who is the Sheriff of Piltover?",
             answers: {
-                1: "Camille",
-                2: "Caitlin",
-                3: "Heimerdinger",
-                4: "Seraphine",
+                a: "Camille",
+                b: "Caitlin",
+                c: "Heimerdinger",
+                d: "Seraphine",
             },
-            trueAnswer: "2"
+            trueAnswer: "b"
         },
         {
             question: "Who killed Vayne's parents?",
             answers: {
-                1: "Morgana",
-                2: "Jhin",
-                3: "Sylas",
-                4: "Evelynn",
+                a: "Morgana",
+                b: "Jhin",
+                c: "Sylas",
+                d: "Evelynn",
             },
-            trueAnswer: "4"
+            trueAnswer: "d"
         },
         {
             question: "Who wields the sentient darkin weapon, Raast?",
             answers: {
-                1: "Kayn",
-                2: "Varus",
-                3: "Darius",
-                4: "Jhin",
+                a: "Kayn",
+                b: "Varus",
+                c: "Darius",
+                d: "Jhin",
             },
-            trueAnswer: "1"
+            trueAnswer: "a"
         },
         {
             question: "Who was the infamous murderer once known as the 'Golden Demon'?",
             answers: {
-                1: "Jhin",
-                2: "Zed",
-                3: "Bel'veth",
-                4: "Aatrox",
+                a: "Jhin",
+                b: "Zed",
+                c: "Bel'veth",
+                d: "Aatrox",
             },
-            trueAnswer: "1"
+            trueAnswer: "a"
         },
         {
             question: "Katarina received her scar courtesy of...?",
             answers: {
-                1: "Talon",
-                2: "Cassiopeia",
-                3: "Darius",
-                4: "Riven",
+                a: "Talon",
+                b: "Cassiopeia",
+                c: "Darius",
+                d: "Riven",
             },
-            trueAnswer: "1"
+            trueAnswer: "a"
         },
         {
             question: "Who inspired the 'Glorious Evolution' in Piltover and Zaun?",
             answers: {
-                1: "Jayce",
-                2: "Viktor",
-                3: "Vi",
-                4: "Urgot",
+                a: "Jayce",
+                b: "Viktor",
+                c: "Vi",
+                d: "Urgot",
             },
-            trueAnswer: "2"
+            trueAnswer: "b"
         },
         {
             question: "Which yordle has a forever-friendship with the faerie, Pix?",
             answers: {
-                1: "Heimerdinger",
-                2: "Tristana",
-                3: "Lulu",
-                4: "Vex",
+                a: "Heimerdinger",
+                b: "Tristana",
+                c: "Lulu",
+                d: "Vex",
             },
-            trueAnswer: "3",
+            trueAnswer: "c",
         },
         {
             question: "Which fearsome figure did Miss Fortune witness murder her family as a child?",
             answers: {
-                1: "Nautilus",
-                2: "Gangplank",
-                3: "Twisted Fate",
-                4: "Pyke",
+                a: "Nautilus",
+                b: "Gangplank",
+                c: "Twisted Fate",
+                d: "Pyke",
             },
-            trueAnswer: "2"
+            trueAnswer: "b"
         },
         {
             question: "Who is the brother of the mighty Volibear?",
             answers: {
-            1: "Braum",
-            2: "Galio",
-            3: "Anivia",
-            4: "Ornn",
+                a: "Braum",
+                b: "Galio",
+                c: "Anivia",
+                d: "Ornn",
             },
-            trueAnswer: "4"
+            trueAnswer: "d"
         },
         {
             question: "Who are the masters of the creatures of the Void?",
             answers: {
-            1: "The Watchers",
-            2: "The Aspects",
-            3: "The Black Rose",
-            4: "The Darkin",    
+                a: "The Watchers",
+                b: "The Aspects",
+                c: "The Black Rose",
+                d: "The Darkin",    
             },
-            trueAnswer: "1"
+            trueAnswer: "a"
         },
         {
             question: "What was the name of the cataclysm that merged the spirit and material realms together in the Blessed Isles?",
             answers: {
-                1: "Rune Wars",
-                2: "Ruination",
-                3: "Void War",
-                4: "Fall of Shurima",
+                a: "Rune Wars",
+                b: "Ruination",
+                c: "Void War",
+                d: "Fall of Shurima",
             },
-            trueAnswer: "2"
+            trueAnswer: "b"
         },
         {
             question: "What is the term 'darkin' roughly translated to in the old tongue?",
             answers: {
-                1: "The fallen",
-                2: "The righteous",
-                3: "The malevolent",
-                4: "The lost",
+                a: "The fallen",
+                b: "The righteous",
+                c: "The malevolent",
+                d: "The lost",
             },
-            trueAnswer: "1"
+            trueAnswer: "a"
         },
         {
             question: "Jericho Swain embodies which of the three Principles of Strength as a member of the Trifarix?",
             answers: {
-                1: "Might",
-                2: "Guile",
-                3: "Vision",
-                4: "Mercy",
+                a: "Might",
+                b: "Guile",
+                c: "Vision",
+                d: "Mercy",
             },
-            trueAnswer: "3"
+            trueAnswer: "c"
         },
         {
             question: "To erase the memory of siphoning the essence of her lover, who did Ahri seek out?",
             answers: {
-                1: "The Kinkou",
-                2: "The Order of the Shadow",
-                3: "The Witch Gardener",
-                4: "The Golden Demon",
+                a: "The Kinkou",
+                b: "The Order of the Shadow",
+                c: "The Witch Gardener",
+                d: "The Golden Demon",
             },
-            trueAnswer: "3"
+            trueAnswer: "c"
         },
         {
             question: "How does the demon Evelynn draw her power?",
             answers: {
-                1: "Deception",
-                2: "Inflicting pain",
-                3: "Bargains",
-                4: "Love",
+                a: "Deception",
+                b: "Inflicting pain",
+                c: "Bargains",
+                d: "Love",
             },
-            trueAnswer: "2"
+            trueAnswer: "b"
         },
         {
             question: "What is the name of the white stone the city of Demacia is built on?",
             answers: {
-                1: "Quartzite",
-                2: "Marble",
-                3: "Granite",
-                4: "Petricite",
+                a: "Quartzite",
+                b: "Marble",
+                c: "Granite",
+                d: "Petricite",
             },
-            trueAnswer: "4"
+            trueAnswer: "d"
         },
         {
             question: "What deity does Illaoi serve?",
             answers: {
-                1: "Nagakabouros",
-                2: "Aurelian Sol",
-                3: "Kayle",
-                4: "Soraka",
+                a: "Nagakabouros",
+                b: "Aurelian Sol",
+                c: "Kayle",
+                d: "Soraka",
             },
-            trueAnswer: "1"
+            trueAnswer: "a"
         },
         {
             question: "What justification did the Solari give for denouncing Diana?",
             answers: {
-                1: "Her heresy",
-                2: "Her betrayal",
-                3: "Her evil heart",
-                4: "Her lack of interest",
+                a: "Her heresy",
+                b: "Her betrayal",
+                c: "Her evil heart",
+                d: "Her lack of interest",
             },
-            trueAnswer: "1"
+            trueAnswer: "a"
         },
         {
             question: "What IS Amumu?",
             answers: {
-                1: "A warlord",
-                2: "An ancient Emperor",
-                3: "A popstar",
-                4: "A sad mummy",
+                a: "A warlord",
+                b: "An ancient Emperor",
+                c: "A popstar",
+                d: "A sad mummy",
             },
-            trueAnswer: "4"
+            trueAnswer: "d"
         }
     ];
 
+function runQuiz(){
 
+function displayData(questions, quizArea) {
+    // This variable will contain all the data displayed on the page
+    let output = [];
+    let answers;
 
-checkAnswer()
+    // This applies to each question in the array
+    for (let i = 0; i < questions.length; i++) {
+        answers = [];
 
-correctAnswer()
+        for (letter in questions[i].answers) {
+            answers.push(`<label>
+            <input type="radio" name="question${questions[i]}" value="${letter}">
+            ${letter} : ${questions[i].answers[letter]}
+            </label>`);
+        }
 
-addToScore()
+        output.push(
+            `<div class="question"> ${questions[i].question} </div>
+            <div class="answers"> ${answers.join("")} </div>`
+          );
+    }
 
-totalScore()
+    quizArea.innerHTML = output.join("")
+}
+
+function checkAnswer()
+
+function correctAnswer()
+
+function addToScore()
+
+function totalScore()
+
+}
 
 
 
