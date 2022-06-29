@@ -1,7 +1,7 @@
 // Credit to Love Maths essentials walkthrough for page load event listener code
 // Ensure quiz begins running after page finishes loading
 document.addEventListener("DOMContentLoaded", function() {
-  let buttons = document.getElementById("quiz-btn");
+  let buttons = document.getElementsByClassName("nav-btn");
   for (let button of buttons) {
     button.addEventListener("click", function() {
         if (this.getAttribute("data-type") === "submit") {

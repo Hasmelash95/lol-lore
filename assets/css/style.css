@@ -8,7 +8,7 @@
 
 body {
     max-width: 1800px;
-    background: url("../images/ahri.jpg") no-repeat;
+    background: url("../images/ahri.jpg") no-repeat center;
     background-size: cover;
     background-color:  rgb(31 41 72);
     font-family: "Open Sans", sans-serif;
