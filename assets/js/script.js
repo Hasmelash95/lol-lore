@@ -253,13 +253,13 @@ function displayData(question, answers) {
 
 displayData();
 
-function checkAnswer()
+function checkAnswer() {}
 
-function correctAnswer()
+function correctAnswer() {}
 
-function addToScore()
+function addToScore() {}
 
-function totalScore()
+function totalScore() {}
 
 
 
