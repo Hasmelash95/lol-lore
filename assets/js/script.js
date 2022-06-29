@@ -1,7 +1,7 @@
 // Credit to Love Maths essentials walkthrough for page load event listener code
 // Ensure quiz begins running after page finishes loading
 document.addEventListener("DOMContentLoaded", function() {
-  let buttons = document.getElementsByClass("quiz-btn");
+  let buttons = document.getElementById("quiz-btn");
   for (let button of buttons) {
     button.addEventListener("click", function() {
         if (this.getAttribute("data-type") === "submit") {
@@ -222,7 +222,7 @@ let scoreArea = document.getElementById("score-area");
         }
     ];
 
-function displayData() {
+function displayData(question, answers) {
     // This variable will contain all the data displayed on the page
     let output = [];
    
@@ -249,9 +249,9 @@ function displayData() {
     );
 
     quizArea.innerHTML = output.join("")
-
-    displayData();
 }
+
+displayData();
 
 function checkAnswer()
 
