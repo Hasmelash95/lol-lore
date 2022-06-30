@@ -263,16 +263,17 @@ function checkAnswer() {
          answerArea = answerArea[questionNumber];
          let checked = `input[name=question${questionNumber}]:checked`;
          let selectedAnswer = (answerArea.querySelector(checked) || {}).value;
-
          if (selectedAnswer === currentQuestion.trueAnswer){
             score++;
             alert("Yes!");
+         } else {
+            alert("Incorrect!");
          }
 })
 
 }
 
-function correctAnswer() {}
+function nextQuestion() {}
 
 function addToScore() {}
 
