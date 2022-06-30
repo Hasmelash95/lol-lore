@@ -225,7 +225,7 @@ let score = 0;
         }
     ];
 
-function displayData(question, answers) {
+function displayData() {
     // This variable will contain all the data displayed on the page
     let output = [];
    
@@ -251,6 +251,7 @@ function displayData(question, answers) {
     }
     );
 
+    // To skip the assignment on landing page where the HTML is undefined
     if (quizArea.innerHTML !== "") {
     quizArea.innerHTML = output.join("")}
     else {
@@ -261,12 +262,14 @@ function displayData(question, answers) {
 displayData();
 
 function checkAnswer() {
-    let answerArea = quizArea.querySelectorAll('.answers'); 
 
     quizData.forEach(
         (currentQuestion, questionNumber) => {
-         answerArea = answerArea[questionNumber];
+            let answerContainers = quizArea.querySelectorAll('.answers'); 
+         let answerArea = answerContainers[questionNumber];
+        //  Defining the checked selector
          let checked = `input[name=question${questionNumber}]:checked`;
+        //  The '||' value is in case the user doesn't select any button and submits
          let selectedAnswer = (answerArea.querySelector(checked) || {}).value;
          if (selectedAnswer === currentQuestion.trueAnswer){
             score++;
