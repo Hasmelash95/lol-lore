@@ -17,6 +17,7 @@ let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
 let nextButton = document.getElementById("next");
 let scoreArea = document.getElementById("score-area");
+
 let currentQuestion = 0;
 let score = 0;
 
@@ -250,7 +251,11 @@ function displayData(question, answers) {
     }
     );
 
-    quizArea.innerHTML = output.join("")
+    if (quizArea.innerHTML !== "") {
+    quizArea.innerHTML = output.join("")}
+    else {
+        console.log()
+    }
 }
 
 displayData();
