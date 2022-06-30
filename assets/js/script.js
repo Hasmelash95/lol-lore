@@ -234,7 +234,7 @@ function displayData(question, answers) {
             let answers = [];
 
         for (letter in currentQuestion.answers) {
-
+            // Include label in the push so user can click on the label to select their answer
             answers.push(`<label>
             <input type="radio" name="question${questionNumber}" value="${letter}">
             ${currentQuestion.answers[letter]}

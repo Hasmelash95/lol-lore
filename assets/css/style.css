@@ -65,3 +65,15 @@ button a {
 .pg-two {
     background:  rgb(31 41 72);
 }
+
+#quiz-area {
+    padding: 30px;
+}
+
+.question {
+    padding: 10px;
+}
+
+.answers {
+    padding: 20px;
+}
