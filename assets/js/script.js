@@ -17,6 +17,8 @@ let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
 let nextButton = document.getElementById("next");
 let scoreArea = document.getElementById("score-area");
+let currentQuestion = 0;
+let score = 0;
 
 // Using arrays for the questions allows us to iterate over the questions
     let quizData = [
@@ -253,7 +255,11 @@ function displayData(question, answers) {
 
 displayData();
 
-function checkAnswer() {}
+function checkAnswer() {
+    let correctAnswer = quizData[currentQuestion].trueAnswer;
+
+
+}
 
 function correctAnswer() {}
 
