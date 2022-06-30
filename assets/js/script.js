@@ -256,8 +256,19 @@ function displayData(question, answers) {
 displayData();
 
 function checkAnswer() {
-    let correctAnswer = quizData[currentQuestion].trueAnswer;
+    let answerArea = quizArea.querySelectorAll('.answers'); 
 
+    quizData.forEach(
+        (currentQuestion, questionNumber) => {
+         answerArea = answerArea[questionNumber];
+         let checked = `input[name=question${questionNumber}]:checked`;
+         let selectedAnswer = (answerArea.querySelector(checked) || {}).value;
+
+         if (selectedAnswer === currentQuestion.trueAnswer){
+            score++;
+            alert("Yes!");
+         }
+})
 
 }
 
