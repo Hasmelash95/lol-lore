@@ -255,45 +255,36 @@ let score = 0;
     
 
 function displayData() {
-    // Code credit to sitepoint for output of data
-    // This variable will contain all the data displayed on the page
+        // Code credit to sitepoint for output of data
+        // This variable will contain all the data displayed on the page
+    let quiz = quizData[currentQuestion];
     let output = [];
-   
-
-    // This applies to each question in the array
-    quizData.forEach(
-        (currentQuestion, questionNumber) => {
-
-            let answers = [];
-
-        for (letter in currentQuestion.answers) {
-            // Include label in the push so user can click on the label to select their answer
-            answers.push(`<label>
-            <input type="radio" name="question${questionNumber}" value="${letter}">
-            ${currentQuestion.answers[letter]}
-            </label>`);
-        }
-
-        output.push(
-            `<div class = "page">
-            <div class="question"> ${currentQuestion.question} </div>
-            <div class="answers"> ${answers.join("")} </div>
-            </div>`
-          );
-          
+    let answers = [];
+    let questionNumber = 0 - 1;
+    
+    for (letter in quiz.answers) {
+        // Include label in the push so user can click on the label to select their answer
+        answers.push(`<label>
+        <input type="radio" name="question${questionNumber}" value="${letter}">
+        ${quiz.answers[letter]}
+        </label>`);
     }
-    );
-
-    // To skip the assignment on landing page where the HTML is undefined
-    if (quizArea.innerHTML !== "") {
-    quizArea.innerHTML = output.join("");
-    } else {
-        console.log()
+    
+    output.push(
+        `<div class = "page">
+        <div class="question"> ${quiz.question} </div>
+        <div class="answers"> ${answers.join("")} </div>
+        </div>`
+      );
+      
+        // To skip the assignment on landing page where the HTML is undefined
+       
+            quizArea.innerHTML = output.join("");
+            
     }
-
-}
-// Calling the function defined above
-displayData();
+    
+    // Calling the function defined above
+    displayData() 
 
 
 function revealAnswer() {
@@ -320,7 +311,6 @@ function checkAnswers() {
 })
 
 }
-nextQuestion();
 
  
 function firstQuestion() {
