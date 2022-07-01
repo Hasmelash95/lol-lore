@@ -17,7 +17,6 @@ let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
 let nextButton = document.getElementById("next");
 let scoreArea = document.getElementById("score-area");
-
 let currentQuestion = 0;
 let score = 0;
 
@@ -254,8 +253,8 @@ function displayData() {
 
     // To skip the assignment on landing page where the HTML is undefined
     if (quizArea.innerHTML !== "") {
-    quizArea.innerHTML = output.join("")}
-    else {
+    quizArea.innerHTML = output.join("");
+    } else {
         console.log()
     }
 }
@@ -276,7 +275,7 @@ function checkAnswer() {
             score++;
             alert("Yes!");
          } else {
-            alert("Incorrect!");
+            console.log(score);
          }
 })
 
