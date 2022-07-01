@@ -23,6 +23,8 @@ let scoreArea = document.getElementById("score-area");
 let currentQuestion = 0;
 let score = 0;
 
+
+
 // Using arrays for the questions allows us to iterate over the questions
     let quizData = [
         {
@@ -248,6 +250,8 @@ let score = 0;
         }
     ];
 
+    
+
 function displayData() {
     // Code credit to sitepoint for output of data
     // This variable will contain all the data displayed on the page
@@ -269,9 +273,12 @@ function displayData() {
         }
 
         output.push(
-            `<div class="question"> ${currentQuestion.question} </div>
-            <div class="answers"> ${answers.join("")} </div>`
+            `<div class = "page">
+            <div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join("")} </div>
+            </div>`
           );
+          
     }
     );
 
@@ -286,6 +293,9 @@ function displayData() {
 }
 // Calling the function defined
 displayData();
+
+let pages = document.querySelectorAll(".page");
+let currentPage = 0;
 
 function revealAnswer() {
 
@@ -311,15 +321,11 @@ function checkAnswers() {
 
 }
 
+function firstQuestion() {}
+
 function nextQuestion() { 
-    if (currentQuestion === quizData.length - 1) {
-        submitButton.style.display = "visible";
-    } else {
-        displayData(quizData[currentQuestion++]);
-    }
 
 }
-
 
 function addToScore() {}
 
