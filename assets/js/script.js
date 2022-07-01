@@ -6,8 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     button.addEventListener("click", function() {
         if (this.getAttribute("data-type") === "submit") {
             checkAnswer();
+        } else if (this.getAttribute("data-type") === "next") {
+              nextQuestion(); 
         } else {
-            alert("Check answer by submitting!");
+            alert("Unknown button");
+            throw "Unknown button. Aborting..."
         }
  
 })}})
@@ -30,7 +33,8 @@ let score = 0;
                 c: "Xerath",
                 d: "Renekton",
             }, 
-            trueAnswer: "c"
+            trueAnswer: "c",
+            explanation: "Enraged after many years spent as a slave, Xerath killed Emperor Azir during his Ascending Ritual and took his place. Destroying Shurima in the process."
         },
         {
             question: "2. Who is the Sheriff of Piltover?",
@@ -40,7 +44,8 @@ let score = 0;
                 c: "Heimerdinger",
                 d: "Seraphine",
             },
-            trueAnswer: "b"
+            trueAnswer: "b",
+            explanation: "Expert markswoman, Caitlin, is the highly intelligent Sheriff of Piltover. Her skills and cunning make her a woman not to be trifled with."
         },
         {
             question: "3. Who killed Vayne's parents?",
@@ -50,7 +55,8 @@ let score = 0;
                 c: "Sylas",
                 d: "Evelynn",
             },
-            trueAnswer: "d"
+            trueAnswer: "d",
+            explanation: "At the age of sixteen, Vayne witnessed a woman of unspeakable beauty with horns standing over the corpses of her parents. She has vowed vengeance since."
         },
         {
             question: "4. Who wields the sentient darkin weapon, Raast?",
@@ -60,7 +66,8 @@ let score = 0;
                 c: "Darius",
                 d: "Jhin",
             },
-            trueAnswer: "a"
+            trueAnswer: "a",
+            explanation: "Kayn is the bearer of the sentient, corrupting weapon. Will he let it control him? It remains to be seen."
         },
         {
             question: "5. Who was the infamous murderer once known as the 'Golden Demon'?",
@@ -70,7 +77,8 @@ let score = 0;
                 c: "Bel'veth",
                 d: "Aatrox",
             },
-            trueAnswer: "a"
+            trueAnswer: "a",
+            explanation: "Despite his name, the Golden Demon turned out to be just a man. A stragehand named Khada Jhin."
         },
         {
             question: "6. Katarina received her scar courtesy of...?",
@@ -80,7 +88,8 @@ let score = 0;
                 c: "Darius",
                 d: "Riven",
             },
-            trueAnswer: "a"
+            trueAnswer: "a",
+            explanation: "Talon was an assassin sent by Katarina's father to punish her for her errors. The blade just about missed her eye."
         },
         {
             question: "7. Who inspired the 'Glorious Evolution' in Piltover and Zaun?",
@@ -90,7 +99,8 @@ let score = 0;
                 c: "Vi",
                 d: "Urgot",
             },
-            trueAnswer: "b"
+            trueAnswer: "b",
+            explanation: "Viktor is a believer in mechanical augmentation to remove the failings of one's humanity."
         },
         {
             question: "8. Which yordle has a forever-friendship with the faerie, Pix?",
@@ -101,6 +111,7 @@ let score = 0;
                 d: "Vex",
             },
             trueAnswer: "c",
+            explanation: "Lulu encountered Pix, who lead her to the Glade, where she learned to greatly magnify her powers."
         },
         {
             question: "9. Which fearsome figure did Miss Fortune witness murder her family as a child?",
@@ -110,7 +121,8 @@ let score = 0;
                 c: "Twisted Fate",
                 d: "Pyke",
             },
-            trueAnswer: "b"
+            trueAnswer: "b",
+            explanation: "Sarah Fortune brutally witnessed the reaver Gangplank murder her family and burn their workshop. Surviving her wounds, she was determined to get her revenge. "
         },
         {
             question: "10. Who is the brother of the mighty Volibear?",
@@ -120,7 +132,8 @@ let score = 0;
                 c: "Anivia",
                 d: "Ornn",
             },
-            trueAnswer: "d"
+            trueAnswer: "d",
+            explanation: "The embodiment of storms, the demi-god Volibear is brother to Ornn, the demigod of the forge. Their sister Anivia is a catalyst of change."
         },
         {
             question: "11. Who are the masters of the creatures of the Void?",
@@ -130,7 +143,8 @@ let score = 0;
                 c: "The Black Rose",
                 d: "The Darkin",    
             },
-            trueAnswer: "a"
+            trueAnswer: "a",
+            explanation: "Disconcerted by the presence of life, the Watchers bid the creatures of the Void with one task: destruction."
         },
         {
             question: "12. What was the name of the cataclysm that merged the spirit and material realms together in the Blessed Isles?",
@@ -140,7 +154,8 @@ let score = 0;
                 c: "Void War",
                 d: "Fall of Shurima",
             },
-            trueAnswer: "b"
+            trueAnswer: "b",
+            explanation: "The Ruined King, Viego, brought on the Ruination in an attempt to raise his wife from the dead. The attempt created the Shadow Isles."
         },
         {
             question: "13. What is the term 'darkin' roughly translated to in the old tongue?",
@@ -150,7 +165,8 @@ let score = 0;
                 c: "The malevolent",
                 d: "The lost",
             },
-            trueAnswer: "a"
+            trueAnswer: "a",
+            explanation: "The darkin were once the famed god-warriors of the Shuriman Empire. After fighting against the unleashed Void, they became steadily corrupted."
         },
         {
             question: "14. Jericho Swain embodies which of the three Principles of Strength as a member of the Trifarix?",
@@ -160,7 +176,8 @@ let score = 0;
                 c: "Vision",
                 d: "Mercy",
             },
-            trueAnswer: "c"
+            trueAnswer: "c",
+            explanation: "Swain embodies the principle, Vision. His co-rulers, Darius and the Pale Lady embody Strength and Guile respectively."
         },
         {
             question: "15. To erase the memory of siphoning the essence of her lover, who did Ahri seek out?",
@@ -170,7 +187,8 @@ let score = 0;
                 c: "The Witch Gardener",
                 d: "The Golden Demon",
             },
-            trueAnswer: "c"
+            trueAnswer: "c",
+            explanation: "Ahri siphoned the essence of a man she had loved. Although the memory was painful, she ultimately decided not to erase it."
         },
         {
             question: "16. How does the demon Evelynn draw her power?",
@@ -180,7 +198,8 @@ let score = 0;
                 c: "Bargains",
                 d: "Love",
             },
-            trueAnswer: "b"
+            trueAnswer: "b",
+            explanation: "The demon Evelynn draws her power by inflicting excruciating pain on her victims."
         },
         {
             question: "17. What is the name of the white stone the city of Demacia is built on?",
@@ -190,7 +209,8 @@ let score = 0;
                 c: "Granite",
                 d: "Petricite",
             },
-            trueAnswer: "d"
+            trueAnswer: "d",
+            explanation: "Demacia is considered a haven away from the horrors of magic. The stone, Petricite, acts to dampen the effects of magic."
         },
         {
             question: "18. What deity does Illaoi serve?",
@@ -200,7 +220,8 @@ let score = 0;
                 c: "Kayle",
                 d: "Soraka",
             },
-            trueAnswer: "a"
+            trueAnswer: "a",
+            explanation: "Illaoi is a priest residing in Bilgewater, who calls on the power of the Godess of Motion, Nagakkabouros."
         },
         {
             question: "19. What justification did the Solari give for denouncing Diana?",
@@ -210,7 +231,9 @@ let score = 0;
                 c: "Her evil heart",
                 d: "Her lack of interest",
             },
-            trueAnswer: "a"
+            trueAnswer: "a",
+            explanation: "She was denounced for questioning the Solari's teachings and seeking out the heretic faith of the Lunari."
+
         },
         {
             question: "20. What IS Amumu?",
@@ -220,7 +243,8 @@ let score = 0;
                 c: "A popstar",
                 d: "A sad mummy",
             },
-            trueAnswer: "d"
+            trueAnswer: "d",
+            explanation: "He is a very sad mummy."
         }
     ];
 
@@ -261,6 +285,10 @@ function displayData() {
 // Calling the function defined
 displayData();
 
+function revealAnswer() {
+
+}
+
 function checkAnswer() {
 // Code help from sitepoint
     quizData.forEach(
@@ -273,15 +301,17 @@ function checkAnswer() {
          let selectedAnswer = (oneAnswer.querySelector(checked) || {}).value;
          if (selectedAnswer === currentQuestion.trueAnswer){
             score++;
-            alert("Yes!");
+            revealAnswer();  
          } else {
-            console.log(score);
+            revealAnswer();
          }
 })
 
 }
 
-function nextQuestion() {}
+function nextQuestion() {
+
+}
 
 function addToScore() {}
 
