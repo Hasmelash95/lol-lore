@@ -226,6 +226,7 @@ let score = 0;
     ];
 
 function displayData() {
+    // Code credit to sitepoint for output of data
     // This variable will contain all the data displayed on the page
     let output = [];
    
@@ -258,19 +259,19 @@ function displayData() {
         console.log()
     }
 }
-
+// Calling the function defined
 displayData();
 
 function checkAnswer() {
-
+// Code help from sitepoint
     quizData.forEach(
         (currentQuestion, questionNumber) => {
-            let answerContainers = quizArea.querySelectorAll('.answers'); 
-         let answerArea = answerContainers[questionNumber];
+         let answerAreas = quizArea.querySelectorAll('.answers'); 
+         let oneAnswer = answerAreas[questionNumber];
         //  Defining the checked selector
          let checked = `input[name=question${questionNumber}]:checked`;
         //  The '||' value is in case the user doesn't select any button and submits
-         let selectedAnswer = (answerArea.querySelector(checked) || {}).value;
+         let selectedAnswer = (oneAnswer.querySelector(checked) || {}).value;
          if (selectedAnswer === currentQuestion.trueAnswer){
             score++;
             alert("Yes!");
