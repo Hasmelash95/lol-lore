@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
 // To get elements from the html
 let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
+// Submit button should only show up when user gets to the last question
+submitButton.style.display = "none"
 let nextButton = document.getElementById("next");
 let scoreArea = document.getElementById("score-area");
 let currentQuestion = 0;
@@ -289,13 +291,10 @@ function displayData() {
         console.log()
     }
 
-    submitButton.classList.add("hide")
 }
-// Calling the function defined
+// Calling the function defined above
 displayData();
 
-let pages = document.querySelectorAll(".page");
-let currentPage = 0;
 
 function revealAnswer() {
 
@@ -317,14 +316,26 @@ function checkAnswers() {
          } else {
             revealAnswer();
          }
+         
 })
 
 }
+nextQuestion();
 
-function firstQuestion() {}
+ 
+function firstQuestion() {
+
+}
+
+
 
 function nextQuestion() { 
-
+    if (currentQuestion === quizData.length - 1) {
+        nextButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        } else {
+            displayData(quizData[currentQuestion++]);
+        }
 }
 
 function addToScore() {}
