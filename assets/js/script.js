@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // To get elements from the html
 let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
+submitButton.style.display = 'none';
 let nextButton = document.getElementById("next");
 let scoreArea = document.getElementById("score-area");
 let currentQuestion = 0;
@@ -312,8 +313,8 @@ function checkAnswer() {
 }
 
 function nextQuestion() {
-    if (currentQuestion == quizData.length) {
-        submitButton.classList.remove("hide");
+    if (currentQuestion === quizData.length - 1) {
+        submitButton.style.display = "visible";
     } else {
         displayData(quizData[currentQuestion++]);
     }
