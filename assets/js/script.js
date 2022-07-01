@@ -281,6 +281,8 @@ function displayData() {
     } else {
         console.log()
     }
+
+    submitButton.classList.add("hide")
 }
 // Calling the function defined
 displayData();
@@ -310,6 +312,11 @@ function checkAnswer() {
 }
 
 function nextQuestion() {
+    if (currentQuestion == quizData.length) {
+        submitButton.classList.remove("hide");
+    } else {
+        displayData(quizData[currentQuestion++]);
+    }
 
 }
 
