@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   for (let button of buttons) {
     button.addEventListener("click", function() {
         if (this.getAttribute("data-type") === "submit") {
-            checkAnswer();
+            checkAnswers();
         } else if (this.getAttribute("data-type") === "next") {
               nextQuestion(); 
         } else {
@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
 // To get elements from the html
 let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
-submitButton.style.display = 'none';
 let nextButton = document.getElementById("next");
 let scoreArea = document.getElementById("score-area");
 let currentQuestion = 0;
@@ -292,7 +291,7 @@ function revealAnswer() {
 
 }
 
-function checkAnswer() {
+function checkAnswers() {
 // Code help from sitepoint
     quizData.forEach(
         (currentQuestion, questionNumber) => {
@@ -312,7 +311,7 @@ function checkAnswer() {
 
 }
 
-function nextQuestion() {
+function nextQuestion() { 
     if (currentQuestion === quizData.length - 1) {
         submitButton.style.display = "visible";
     } else {
@@ -320,6 +319,7 @@ function nextQuestion() {
     }
 
 }
+
 
 function addToScore() {}
 

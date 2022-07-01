@@ -55,11 +55,17 @@ button {
     background-color: rgb(31 41 72);
 }
 
-button a {
+button a,
+#submit,
+#next {
     text-decoration: none;
     font-size: 1.15rem;
     line-height: 2rem;
     color: rgb(216, 201, 198);
+}
+
+div #quiz-btn {
+    text-align: center;
 }
 
 .pg-two {
