@@ -23,7 +23,7 @@ let score = 0;
 // Using arrays for the questions allows us to iterate over the questions
     let quizData = [
         {
-            question: "The great Empire of Shurima was destroyed after which Champion betrayed the Emperor?",
+            question: "1. The great Empire of Shurima was destroyed after which Champion betrayed the Emperor?",
             answers: {
                 a: "Sivir",
                 b: "Nasus",
@@ -33,7 +33,7 @@ let score = 0;
             trueAnswer: "c"
         },
         {
-            question: "Who is the Sheriff of Piltover?",
+            question: "2. Who is the Sheriff of Piltover?",
             answers: {
                 a: "Camille",
                 b: "Caitlin",
@@ -43,7 +43,7 @@ let score = 0;
             trueAnswer: "b"
         },
         {
-            question: "Who killed Vayne's parents?",
+            question: "3. Who killed Vayne's parents?",
             answers: {
                 a: "Morgana",
                 b: "Jhin",
@@ -53,7 +53,7 @@ let score = 0;
             trueAnswer: "d"
         },
         {
-            question: "Who wields the sentient darkin weapon, Raast?",
+            question: "4. Who wields the sentient darkin weapon, Raast?",
             answers: {
                 a: "Kayn",
                 b: "Varus",
@@ -63,7 +63,7 @@ let score = 0;
             trueAnswer: "a"
         },
         {
-            question: "Who was the infamous murderer once known as the 'Golden Demon'?",
+            question: "5. Who was the infamous murderer once known as the 'Golden Demon'?",
             answers: {
                 a: "Jhin",
                 b: "Zed",
@@ -73,7 +73,7 @@ let score = 0;
             trueAnswer: "a"
         },
         {
-            question: "Katarina received her scar courtesy of...?",
+            question: "6. Katarina received her scar courtesy of...?",
             answers: {
                 a: "Talon",
                 b: "Cassiopeia",
@@ -83,7 +83,7 @@ let score = 0;
             trueAnswer: "a"
         },
         {
-            question: "Who inspired the 'Glorious Evolution' in Piltover and Zaun?",
+            question: "7. Who inspired the 'Glorious Evolution' in Piltover and Zaun?",
             answers: {
                 a: "Jayce",
                 b: "Viktor",
@@ -93,7 +93,7 @@ let score = 0;
             trueAnswer: "b"
         },
         {
-            question: "Which yordle has a forever-friendship with the faerie, Pix?",
+            question: "8. Which yordle has a forever-friendship with the faerie, Pix?",
             answers: {
                 a: "Heimerdinger",
                 b: "Tristana",
@@ -103,7 +103,7 @@ let score = 0;
             trueAnswer: "c",
         },
         {
-            question: "Which fearsome figure did Miss Fortune witness murder her family as a child?",
+            question: "9. Which fearsome figure did Miss Fortune witness murder her family as a child?",
             answers: {
                 a: "Nautilus",
                 b: "Gangplank",
@@ -113,7 +113,7 @@ let score = 0;
             trueAnswer: "b"
         },
         {
-            question: "Who is the brother of the mighty Volibear?",
+            question: "10. Who is the brother of the mighty Volibear?",
             answers: {
                 a: "Braum",
                 b: "Galio",
@@ -123,7 +123,7 @@ let score = 0;
             trueAnswer: "d"
         },
         {
-            question: "Who are the masters of the creatures of the Void?",
+            question: "11. Who are the masters of the creatures of the Void?",
             answers: {
                 a: "The Watchers",
                 b: "The Aspects",
@@ -133,7 +133,7 @@ let score = 0;
             trueAnswer: "a"
         },
         {
-            question: "What was the name of the cataclysm that merged the spirit and material realms together in the Blessed Isles?",
+            question: "12. What was the name of the cataclysm that merged the spirit and material realms together in the Blessed Isles?",
             answers: {
                 a: "Rune Wars",
                 b: "Ruination",
@@ -143,7 +143,7 @@ let score = 0;
             trueAnswer: "b"
         },
         {
-            question: "What is the term 'darkin' roughly translated to in the old tongue?",
+            question: "13. What is the term 'darkin' roughly translated to in the old tongue?",
             answers: {
                 a: "The fallen",
                 b: "The righteous",
@@ -153,7 +153,7 @@ let score = 0;
             trueAnswer: "a"
         },
         {
-            question: "Jericho Swain embodies which of the three Principles of Strength as a member of the Trifarix?",
+            question: "14. Jericho Swain embodies which of the three Principles of Strength as a member of the Trifarix?",
             answers: {
                 a: "Might",
                 b: "Guile",
@@ -163,7 +163,7 @@ let score = 0;
             trueAnswer: "c"
         },
         {
-            question: "To erase the memory of siphoning the essence of her lover, who did Ahri seek out?",
+            question: "15. To erase the memory of siphoning the essence of her lover, who did Ahri seek out?",
             answers: {
                 a: "The Kinkou",
                 b: "The Order of the Shadow",
@@ -173,7 +173,7 @@ let score = 0;
             trueAnswer: "c"
         },
         {
-            question: "How does the demon Evelynn draw her power?",
+            question: "16. How does the demon Evelynn draw her power?",
             answers: {
                 a: "Deception",
                 b: "Inflicting pain",
@@ -183,7 +183,7 @@ let score = 0;
             trueAnswer: "b"
         },
         {
-            question: "What is the name of the white stone the city of Demacia is built on?",
+            question: "17. What is the name of the white stone the city of Demacia is built on?",
             answers: {
                 a: "Quartzite",
                 b: "Marble",
@@ -193,7 +193,7 @@ let score = 0;
             trueAnswer: "d"
         },
         {
-            question: "What deity does Illaoi serve?",
+            question: "18. What deity does Illaoi serve?",
             answers: {
                 a: "Nagakabouros",
                 b: "Aurelian Sol",
@@ -203,7 +203,7 @@ let score = 0;
             trueAnswer: "a"
         },
         {
-            question: "What justification did the Solari give for denouncing Diana?",
+            question: "19. What justification did the Solari give for denouncing Diana?",
             answers: {
                 a: "Her heresy",
                 b: "Her betrayal",
@@ -213,7 +213,7 @@ let score = 0;
             trueAnswer: "a"
         },
         {
-            question: "What IS Amumu?",
+            question: "20. What IS Amumu?",
             answers: {
                 a: "A warlord",
                 b: "An ancient Emperor",
