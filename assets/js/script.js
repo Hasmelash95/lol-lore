@@ -19,11 +19,12 @@ document.addEventListener("DOMContentLoaded", function() {
 let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
 // Submit button should only show up when user gets to the last question
-submitButton.style.display = "none"
 let nextButton = document.getElementById("next");
 let scoreArea = document.getElementById("score-area");
 let currentQuestion = 0;
 let score = 0;
+let questionNumber = currentQuestion + 1;
+
 
 
 
@@ -257,11 +258,11 @@ let score = 0;
 function displayData() {
     
     // This variable will contain all the data displayed on the page
-    for (let i = 0; i < quizData.length; i++) {    
+       
     let quiz = quizData[currentQuestion];
     let output = [];
     let answers = [];
-    let questionNumber = 0;
+    let questionNumber = currentQuestion + 1;
 
     // Code credit to sitepoint for output of data
     for (letter in quiz.answers) {
@@ -270,8 +271,9 @@ function displayData() {
         <input type="radio" name="question${questionNumber}" value="${letter}">
         ${quiz.answers[letter]}
         </label>`);
+       
     }
-    
+
     output.push(
         `<div class = "page">
         <div class="question"> ${quiz.question} </div>
@@ -284,7 +286,7 @@ function displayData() {
             quizArea.innerHTML = output.join("");
             
     }
-}
+
     // Calling the function defined above
     displayData() 
 
@@ -295,18 +297,18 @@ function revealAnswer() {
 
 function checkAnswers() {
     let correctAnswer = quizData[currentQuestion].trueAnswer;
-    let questionNumber = 0;
-    let quiz = quizData[currentQuestion];
 
-    for (letter in quiz.answers) {
-    if (document.querySelector(`input[name="question${questionNumber}"]:checked`) == correctAnswer) {
-
+    let questionNumber = currentQuestion + 1;
+    let checked = document.querySelector(`input[name="question${questionNumber}"]:checked`.value)
+    debugger
+    if (checked == correctAnswer) {
     score++
+
         
          
 
 
-}}}
+}}
 
  
 function firstQuestion() {
