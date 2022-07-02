@@ -255,13 +255,15 @@ let score = 0;
     
 
 function displayData() {
-        // Code credit to sitepoint for output of data
-        // This variable will contain all the data displayed on the page
+    
+    // This variable will contain all the data displayed on the page
+    for (let i = 0; i < quizData.length; i++) {    
     let quiz = quizData[currentQuestion];
     let output = [];
     let answers = [];
-    let questionNumber = 0 - 1;
-    
+    let questionNumber = 0;
+
+    // Code credit to sitepoint for output of data
     for (letter in quiz.answers) {
         // Include label in the push so user can click on the label to select their answer
         answers.push(`<label>
@@ -282,7 +284,7 @@ function displayData() {
             quizArea.innerHTML = output.join("");
             
     }
-    
+}
     // Calling the function defined above
     displayData() 
 
@@ -292,25 +294,19 @@ function revealAnswer() {
 }
 
 function checkAnswers() {
-// Code help from sitepoint
-    quizData.forEach(
-        (currentQuestion, questionNumber) => {
-         let answerAreas = quizArea.querySelectorAll('.answers'); 
-         let oneAnswer = answerAreas[questionNumber];
-        //  Defining the checked selector
-         let checked = `input[name=question${questionNumber}]:checked`;
-        //  The '||' value is in case the user doesn't select any button and submits
-         let selectedAnswer = (oneAnswer.querySelector(checked) || {}).value;
-         if (selectedAnswer === currentQuestion.trueAnswer){
-            score++;
-            revealAnswer();  
-         } else {
-            revealAnswer();
-         }
-         
-})
+    let correctAnswer = quizData[currentQuestion].trueAnswer;
+    let questionNumber = 0;
+    let quiz = quizData[currentQuestion];
 
-}
+    for (letter in quiz.answers) {
+    if (document.querySelector(`input[name="question${questionNumber}"]:checked`) == correctAnswer) {
+
+    score++
+        
+         
+
+
+}}}
 
  
 function firstQuestion() {
