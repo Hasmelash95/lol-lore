@@ -299,9 +299,8 @@ function checkAnswers() {
     let correctAnswer = quizData[currentQuestion].trueAnswer;
 
     let questionNumber = currentQuestion + 1;
-    let checked = document.querySelector(`input[name="question${questionNumber}"]:checked`.value)
-    debugger
-    if (checked == correctAnswer) {
+    let checked = document.querySelector(`input[name="question${questionNumber}"]:checked`).value
+    if (checked == correctAnswer === true) {
     score++
 
         
