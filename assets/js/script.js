@@ -26,10 +26,10 @@ let currentQuestion = 0;
 let score = 0;
 let questionNumber = currentQuestion + 1;
 
-
-
-
-// Using arrays for the questions allows us to iterate over the questions
+/**
+ * The questions and answers are in an array with objects and properties nested within. The expanation property will appear
+ * in the alert box after each submit.
+ */
 let quizData = [{
         question: "1. The great Empire of Shurima was destroyed after which Champion betrayed the Emperor?",
         answers: {
@@ -253,8 +253,9 @@ let quizData = [{
     }
 ];
 
-
-
+/**
+ * The displayData function will output the quizData and ensure one question is displayed on the page at a time.
+ */
 function displayData() {
 
     let quiz = quizData[currentQuestion];
@@ -285,8 +286,12 @@ function displayData() {
 }
 
 // Calling the function defined above
-displayData()
+displayData();
 
+/**
+ * On clicking submit the answer will be checked against the correctAnswer defined in this function and if correct, the score
+ * increments by one.
+ */
 function checkAnswers() {
     let correctAnswer = quizData[currentQuestion].trueAnswer;
 
@@ -301,13 +306,17 @@ function checkAnswers() {
     hideSubmit();
 }
 
-
+/**
+ * The submit button will hide when it's clicked so that the user doesn't submit an answer twice.
+ */
 function hideSubmit() {
     submitButton.style.display = "none";
 }
 
-
-
+/**
+ * Clicking the next button will take user to the next question in the array until the final question where it'll take the 
+ * user to the display of their final score
+ */
 function nextQuestion() {
     if (currentQuestion === quizData.length - 1) {
         nextButton.style.display = "none";
@@ -318,6 +327,10 @@ function nextQuestion() {
     }
 }
 
+/**
+ * The submit button will be revealed again when the next button is clicked so the user can submit the answer to the next question
+ * with the exception of the final question.
+ */
 function showSubmit() {
     submitButton.style.display = "inline-block";
 }
