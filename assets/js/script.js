@@ -22,9 +22,9 @@ let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
 let nextButton = document.getElementById("next");
 let scoreArea = document.getElementById("score-area");
+// Defining some variables that will appear throughout the script
 let currentQuestion = 0;
 let score = 0;
-let questionNumber = currentQuestion + 1;
 
 /**
  * The questions and answers are in an array with objects and properties nested within. The expanation property will appear
@@ -320,6 +320,7 @@ function hideSubmit() {
 function nextQuestion() {
     if (currentQuestion === quizData.length - 1) {
         nextButton.style.display = "none";
+        submitButton.style.display = "none";
         totalScore();
     } else {
         displayData(quizData[currentQuestion++]);
