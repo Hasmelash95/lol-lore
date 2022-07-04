@@ -59,7 +59,7 @@ let quizData = [{
             d: "Evelynn",
         },
         trueAnswer: "d",
-        explanation: "At the age of sixteen, Vayne witnessed a woman of unspeakable beauty with horns standing over the corpses of her parents. She has vowed vengeance since."
+        explanation: "The demon Evelynn. At the age of sixteen, Vayne witnessed a woman of unspeakable beauty with horns standing over the corpses of her parents. She has vowed vengeance since."
     },
     {
         question: "4. Who wields the sentient darkin weapon, Raast?",
@@ -81,7 +81,7 @@ let quizData = [{
             d: "Aatrox",
         },
         trueAnswer: "a",
-        explanation: "Despite his name, the Golden Demon turned out to be just a man. A stragehand named Khada Jhin."
+        explanation: "Despite his name, the Golden Demon turned out to be just a man. A stagehand named Khada Jhin."
     },
     {
         question: "6. Katarina received her scar courtesy of...?",
@@ -299,7 +299,9 @@ function checkAnswers() {
         if (checked == correctAnswer === true) {
             score++
             correctAlert();
-        } 
+        } else {
+            incorrectAlert();
+        }
     } else {
         incorrectAlert();
     }
@@ -334,6 +336,11 @@ function incorrectAlert() {
     alert(`Not Quite! ${quiz.explanation}`)
 }
 
+/**
+ * When submit is clicked on final question, quiz area text is replaced with score area text"
+ */
 function totalScore() {
-    quizArea.innerHTML = ("");
+    quizArea.innerHTML = "";
+    let totalScore = (score / quizData.length * 100);
+    scoreArea.innerHTML = (`Your final score is ${totalScore}%!`)
 }
