@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // To get elements from the html
 let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
-// Submit button should only show up when user gets to the last question
 let nextButton = document.getElementById("next");
 let scoreArea = document.getElementById("score-area");
 let currentQuestion = 0;
@@ -258,9 +257,8 @@ let quizData = [{
 
 function displayData() {
 
-    // This variable will contain all the data displayed on the page
-
     let quiz = quizData[currentQuestion];
+    // This variable will contain all the data displayed on the page
     let output = [];
     let answers = [];
     let questionNumber = currentQuestion + 1;
@@ -281,8 +279,6 @@ function displayData() {
         <div class="answers"> ${answers.join("")} </div>
         </div>`
     );
-
-    // To skip the assignment on landing page where the HTML is undefined
 
     quizArea.innerHTML = output.join("");
 
