@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // To get elements from the html
 let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
-let nextButton = document.getElementById("next");
 let scoreArea = document.getElementById("score-area");
 // Defining some variables that will appear throughout the script
 let currentQuestion = 0;
@@ -300,6 +299,8 @@ function checkAnswers() {
         if (checked == correctAnswer === true) {
             score++
             correctAlert();
+        } else {
+            incorrectAlert();
         }
     }
 }
@@ -317,8 +318,20 @@ function nextQuestion() {
     }
 }
 
+/**
+ * Clicking submit after selecting the right answer will prompt a Correct! alert with an explanation
+ */
 function correctAlert() {
+ let quiz = quizData[currentQuestion];
+alert(`Correct! ${quiz.explanation}`)
+}
 
+/**
+ * Clicking submit after selecting the wrong answer will prompt a Not Quite! alert with an explanation
+ */
+function incorrectAlert() {
+    let quiz = quizData[currentQuestion];
+    alert(`Not Quite! ${quiz.explanation}`)
 }
 
 function totalScore() {}
