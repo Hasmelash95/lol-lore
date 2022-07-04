@@ -290,20 +290,17 @@ function displayData() {
     // Calling the function defined above
     displayData() 
 
-
-function revealAnswer() {
-
-}
-
 function checkAnswers() {
     let correctAnswer = quizData[currentQuestion].trueAnswer;
 
     let questionNumber = currentQuestion + 1;
-    let checked = document.querySelector(`input[name="question${questionNumber}"]:checked`).value
+    if (document.querySelector(`input[name="question${questionNumber}"]:checked`)) {
+        let checked = document.querySelector(`input[name="question${questionNumber}"]:checked`).value;
     if (checked == correctAnswer === true) {
     score++
+    correctAlert();
+    }
 }
-correctAlert();
 hideSubmit();
 }
 
