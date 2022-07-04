@@ -318,11 +318,10 @@ function hideSubmit() {
 function nextQuestion() { 
     if (currentQuestion === quizData.length - 1) {
         nextButton.style.display = "none";
-        submitButton.style.display = "inline-block";
         } else {
             displayData(quizData[currentQuestion++]);
+            showSubmit();
         }
-        showSubmit();
 }
 
 function showSubmit() {
