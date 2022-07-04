@@ -125,7 +125,7 @@ let quizData = [{
             d: "Pyke",
         },
         trueAnswer: "b",
-        explanation: "Sarah Fortune brutally witnessed the reaver Gangplank murder her family and burn their workshop. Surviving her wounds, she was determined to get her revenge. "
+        explanation: "Sarah Fortune witnessed the reaver Gangplank brutally murder her family and burn their workshop. Surviving her wounds, she was determined to get her revenge. "
     },
     {
         question: "10. Who is the brother of the mighty Volibear?",
@@ -191,7 +191,7 @@ let quizData = [{
             d: "The Golden Demon",
         },
         trueAnswer: "c",
-        explanation: "Ahri siphoned the essence of a man she had loved. Although the memory was painful, she ultimately decided not to erase it."
+        explanation: "Ahri siphoned the essence of a man she had loved and saught The Witch Gardener to remove the memory. Although it was painful, she ultimately decided not to erase it."
     },
     {
         question: "16. How does the demon Evelynn draw her power?",
