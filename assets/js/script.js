@@ -301,10 +301,9 @@ function checkAnswers() {
     let questionNumber = currentQuestion + 1;
     let checked = document.querySelector(`input[name="question${questionNumber}"]:checked`).value
     if (checked == correctAnswer === true) {
-    if (checked !== undefined) {
     score++
-
-}}
+}
+correctAlert();
 hideSubmit();
 }
 
@@ -318,6 +317,7 @@ function hideSubmit() {
 function nextQuestion() { 
     if (currentQuestion === quizData.length - 1) {
         nextButton.style.display = "none";
+        totalScore();
         } else {
             displayData(quizData[currentQuestion++]);
             showSubmit();
@@ -328,7 +328,9 @@ function showSubmit() {
     submitButton.style.display = "inline-block";
 }
 
-function addToScore() {}
+function correctAlert() {
+
+}
 
 function totalScore() {}
 
