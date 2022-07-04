@@ -301,17 +301,16 @@ function checkAnswers() {
     let questionNumber = currentQuestion + 1;
     let checked = document.querySelector(`input[name="question${questionNumber}"]:checked`).value
     if (checked == correctAnswer === true) {
+    if (checked !== undefined) {
     score++
 
-        
-         
-
-
 }}
+hideSubmit();
+}
 
  
-function firstQuestion() {
-
+function hideSubmit() {
+    submitButton.style.display = "none";
 }
 
 
@@ -323,6 +322,11 @@ function nextQuestion() {
         } else {
             displayData(quizData[currentQuestion++]);
         }
+        showSubmit();
+}
+
+function showSubmit() {
+    submitButton.style.display = "inline-block";
 }
 
 function addToScore() {}
