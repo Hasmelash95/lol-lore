@@ -334,4 +334,6 @@ function incorrectAlert() {
     alert(`Not Quite! ${quiz.explanation}`)
 }
 
-function totalScore() {}
+function totalScore() {
+    quizArea.innerHTML = ("");
+}
