@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswers();
-            } else if (this.getAttribute("data-type") === "next") {
                 nextQuestion();
             } else {
                 alert("Unknown button");
@@ -303,37 +302,19 @@ function checkAnswers() {
             correctAlert();
         }
     }
-    hideSubmit();
 }
 
 /**
- * The submit button will hide when it's clicked so that the user doesn't submit an answer twice.
- */
-function hideSubmit() {
-    submitButton.style.display = "none";
-}
-
-/**
- * Clicking the next button will take user to the next question in the array until the final question where it'll take the 
+ * Clicking the submit button will take user to the next question in the array until the final question where it'll take the 
  * user to the display of their final score
  */
 function nextQuestion() {
     if (currentQuestion === quizData.length - 1) {
-        nextButton.style.display = "none";
         submitButton.style.display = "none";
         totalScore();
     } else {
         displayData(quizData[currentQuestion++]);
-        showSubmit();
     }
-}
-
-/**
- * The submit button will be revealed again when the next button is clicked so the user can submit the answer to the next question
- * with the exception of the final question.
- */
-function showSubmit() {
-    submitButton.style.display = "inline-block";
 }
 
 function correctAlert() {
