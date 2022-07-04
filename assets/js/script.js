@@ -299,9 +299,9 @@ function checkAnswers() {
         if (checked == correctAnswer === true) {
             score++
             correctAlert();
-        } else {
-            incorrectAlert();
-        }
+        } 
+    } else {
+        incorrectAlert();
     }
 }
 
@@ -327,7 +327,7 @@ alert(`Correct! ${quiz.explanation}`)
 }
 
 /**
- * Clicking submit after selecting the wrong answer will prompt a Not Quite! alert with an explanation
+ * Clicking submit after selecting the wrong answer (or no answer) will prompt a Not Quite! alert with an explanation
  */
 function incorrectAlert() {
     let quiz = quizData[currentQuestion];
