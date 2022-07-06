@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // To get elements from the html
 let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
-let scoreArea = document.getElementById("score-area");
+let progressBar = document.getElementById("progress-bar");
+let lolLink = document.getElementById("lol-link");
 // Defining some variables that will appear throughout the script
 let currentQuestion = 0;
 let score = 0;
@@ -283,7 +284,6 @@ function displayData() {
     );
 
     quizArea.innerHTML = output.join("");
-
 }
 
 // Calling the function defined above
