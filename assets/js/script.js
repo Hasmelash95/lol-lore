@@ -24,6 +24,8 @@ let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
 let scoreArea = document.getElementById("score-area");
 let lolLink = document.getElementById("lol-link");
+let progressBar = document.getElementById("progress-bar");
+let currentProgress = document.getElementById("current-progress");
 // Defining some variables that will appear throughout the script
 let currentQuestion = 0;
 let score = 0;
@@ -320,7 +322,12 @@ function nextQuestion() {
         totalScore();
     } else {
         displayData(quizData[currentQuestion++]);
+        userProgress();
     }
+}
+
+function userProgress() {
+    
 }
 
 /**
