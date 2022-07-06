@@ -335,7 +335,7 @@ function userProgress() {
  */
 function correctAlert() {
  let quiz = quizData[currentQuestion];
-alert(`Correct! ${quiz.explanation}`)
+swal(`Correct! ${quiz.explanation}`)
 }
 
 /**
@@ -343,7 +343,7 @@ alert(`Correct! ${quiz.explanation}`)
  */
 function incorrectAlert() {
     let quiz = quizData[currentQuestion];
-    alert(`Not Quite! ${quiz.explanation}`)
+    swal(`Not Quite! ${quiz.explanation}`)
 }
 
 /**
