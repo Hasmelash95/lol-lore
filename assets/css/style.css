@@ -7,7 +7,6 @@
 }
 
 body {
-    max-width: 1800px;
     background: url("../images/empire-of-noxus.jpeg") no-repeat center center;
     background-size: cover;
     background-color:  rgb(31 41 72);
@@ -26,7 +25,7 @@ header {
 
 h1 a {
     text-decoration: none;
-    color: rgb(218, 206, 204);
+    color: rgb(233, 238, 240);
 }
 
 h2 {
@@ -43,6 +42,10 @@ h2 {
     background-color: rgba(233, 238, 240, 0.8);
     letter-spacing: 0.1rem;
     text-align: justify;
+}
+
+li {
+    list-style-type: none;
 }
 
 div .ready {
@@ -69,7 +72,9 @@ div #quiz-btn {
 }
 
 .pg-two {
-    background:  rgb(31 41 72);
+    background: url("../images/shadow-isles-vaults.jpeg") no-repeat center center;
+    background-size: cover;
+    background-color: rgb(31 41 72);
 }
 
 #quiz-area {
