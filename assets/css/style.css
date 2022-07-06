@@ -54,8 +54,14 @@ i {
     color:#243356;
 }
 
+h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
 div .ready {
     text-align: center;
+    margin: 20px;
 }
 
 label {

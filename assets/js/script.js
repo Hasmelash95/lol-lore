@@ -327,7 +327,7 @@ function nextQuestion() {
 }
 
 function userProgress() {
-    
+    currentProgress.style.width += 5;
 }
 
 /**
