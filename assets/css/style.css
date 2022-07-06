@@ -58,6 +58,10 @@ div .ready {
     text-align: center;
 }
 
+label {
+    display: block;
+}
+
 button {
     margin-top: 30px;
     padding: 10px;

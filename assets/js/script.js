@@ -345,9 +345,9 @@ function incorrectAlert() {
 function totalScore() {
     quizArea.innerHTML = `<a href="https://universe.leagueoflegends.com/en_gb/" aria-label="Link takes user to league of legends website in new tab" target="_blank">Click hear to learn more about Runeterra!</a>`;
     let totalScore = (score / quizData.length * 100);
-    if (totalScore <= 40) {
+    if (totalScore < 50) {
     scoreArea.innerHTML = (`Your final score is ${totalScore}%. Better luck next time! Check out the link above to learn more.`)
-    } else if (totalScore <= 69) {
+    } else if (totalScore < 70) {
         scoreArea.innerHTML = (`Your final score is ${totalScore}%. Not bad at all! To buff your knowledge, check out the link above.`)
     } else {
         scoreArea.innerHTML = (`Your final score is ${totalScore}%. You really know your stuff! Well done LoL fan!`)
