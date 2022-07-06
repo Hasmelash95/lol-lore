@@ -38,7 +38,7 @@ let quizData = [{
             a: "Sivir",
             b: "Nasus",
             c: "Xerath",
-            d: "Renekton",
+            d: "Renekton"
         },
         trueAnswer: "c",
         explanation: "Enraged after many years spent as a slave, Xerath killed Emperor Azir during his Ascending Ritual and took his place. Destroying Shurima in the process."
@@ -49,7 +49,7 @@ let quizData = [{
             a: "Camille",
             b: "Caitlin",
             c: "Heimerdinger",
-            d: "Seraphine",
+            d: "Seraphine"
         },
         trueAnswer: "b",
         explanation: "Expert markswoman, Caitlin, is the highly intelligent Sheriff of Piltover. Her skills and cunning make her a woman not to be trifled with."
@@ -60,7 +60,7 @@ let quizData = [{
             a: "Morgana",
             b: "Jhin",
             c: "Sylas",
-            d: "Evelynn",
+            d: "Evelynn"
         },
         trueAnswer: "d",
         explanation: "The demon Evelynn. At the age of sixteen, Vayne witnessed a woman of unspeakable beauty with horns standing over the corpses of her parents. She has vowed vengeance since."
@@ -71,7 +71,7 @@ let quizData = [{
             a: "Kayn",
             b: "Varus",
             c: "Darius",
-            d: "Jhin",
+            d: "Jhin"
         },
         trueAnswer: "a",
         explanation: "Kayn is the bearer of the sentient, corrupting weapon. Will he let it control him? It remains to be seen."
@@ -82,7 +82,7 @@ let quizData = [{
             a: "Jhin",
             b: "Zed",
             c: "Bel'veth",
-            d: "Aatrox",
+            d: "Aatrox"
         },
         trueAnswer: "a",
         explanation: "Despite his name, the Golden Demon turned out to be just a man. A stagehand named Khada Jhin."
@@ -93,7 +93,7 @@ let quizData = [{
             a: "Talon",
             b: "Cassiopeia",
             c: "Darius",
-            d: "Riven",
+            d: "Riven"
         },
         trueAnswer: "a",
         explanation: "Talon was an assassin sent by Katarina's father to punish her for her errors. The blade just about missed her eye."
@@ -104,7 +104,7 @@ let quizData = [{
             a: "Jayce",
             b: "Viktor",
             c: "Vi",
-            d: "Urgot",
+            d: "Urgot"
         },
         trueAnswer: "b",
         explanation: "Viktor is a believer in mechanical augmentation to remove the failings of one's humanity."
@@ -115,7 +115,7 @@ let quizData = [{
             a: "Heimerdinger",
             b: "Tristana",
             c: "Lulu",
-            d: "Vex",
+            d: "Vex"
         },
         trueAnswer: "c",
         explanation: "Lulu encountered Pix, who lead her to the Glade, where she learned to greatly magnify her powers."
@@ -126,7 +126,7 @@ let quizData = [{
             a: "Nautilus",
             b: "Gangplank",
             c: "Twisted Fate",
-            d: "Pyke",
+            d: "Pyke"
         },
         trueAnswer: "b",
         explanation: "Sarah Fortune witnessed the reaver Gangplank brutally murder her family and burn their workshop. Surviving her wounds, she was determined to get her revenge. "
@@ -137,10 +137,10 @@ let quizData = [{
             a: "Braum",
             b: "Galio",
             c: "Anivia",
-            d: "Ornn",
+            d: "Ornn"
         },
         trueAnswer: "d",
-        explanation: "The embodiment of storms, the demi-god Volibear is brother to Ornn, the demigod of the forge. Their sister Anivia is a catalyst of change."
+        explanation: "The embodiment of storms, the demigod Volibear is brother to Ornn, the demigod of the forge. Their sister Anivia is a catalyst of change."
     },
     {
         question: "11. Who are the masters of the creatures of the Void?",
@@ -148,7 +148,7 @@ let quizData = [{
             a: "The Watchers",
             b: "The Aspects",
             c: "The Black Rose",
-            d: "The Darkin",
+            d: "The Darkin"
         },
         trueAnswer: "a",
         explanation: "Disconcerted by the presence of life, the Watchers bid the creatures of the Void with one task: destruction."
@@ -159,7 +159,7 @@ let quizData = [{
             a: "Rune Wars",
             b: "Ruination",
             c: "Void War",
-            d: "Fall of Shurima",
+            d: "Fall of Shurima"
         },
         trueAnswer: "b",
         explanation: "The Ruined King, Viego, brought on the Ruination in an attempt to raise his wife from the dead. The attempt created the Shadow Isles."
@@ -170,7 +170,7 @@ let quizData = [{
             a: "The fallen",
             b: "The righteous",
             c: "The malevolent",
-            d: "The lost",
+            d: "The lost"
         },
         trueAnswer: "a",
         explanation: "The darkin were once the famed god-warriors of the Shuriman Empire. After fighting against the unleashed Void, they became steadily corrupted."
@@ -181,7 +181,7 @@ let quizData = [{
             a: "Might",
             b: "Guile",
             c: "Vision",
-            d: "Mercy",
+            d: "Mercy"
         },
         trueAnswer: "c",
         explanation: "Swain embodies the principle, Vision. His co-rulers, Darius and the Pale Lady embody Strength and Guile respectively."
@@ -192,7 +192,7 @@ let quizData = [{
             a: "The Kinkou",
             b: "The Order of the Shadow",
             c: "The Witch Gardener",
-            d: "The Golden Demon",
+            d: "The Golden Demon"
         },
         trueAnswer: "c",
         explanation: "Ahri siphoned the essence of a man she had loved and saught The Witch Gardener to remove the memory. Although it was painful, she ultimately decided not to erase it."
@@ -203,7 +203,7 @@ let quizData = [{
             a: "Deception",
             b: "Inflicting pain",
             c: "Bargains",
-            d: "Love",
+            d: "Love"
         },
         trueAnswer: "b",
         explanation: "The demon Evelynn draws her power by inflicting excruciating pain on her victims."
@@ -214,7 +214,7 @@ let quizData = [{
             a: "Quartzite",
             b: "Marble",
             c: "Granite",
-            d: "Petricite",
+            d: "Petricite"
         },
         trueAnswer: "d",
         explanation: "Demacia is considered a haven away from the horrors of magic. The stone, Petricite, acts to dampen the effects of magic."
@@ -225,10 +225,10 @@ let quizData = [{
             a: "Nagakabouros",
             b: "Aurelian Sol",
             c: "Kayle",
-            d: "Soraka",
+            d: "Soraka"
         },
         trueAnswer: "a",
-        explanation: "Illaoi is a priest residing in Bilgewater, who calls on the power of the Godess of Motion, Nagakkabouros."
+        explanation: "Illaoi is a priest residing in Bilgewater, who calls on the power of the Goddess of Motion, Nagakkabouros."
     },
     {
         question: "19. What justification did the Solari give for denouncing Diana?",
@@ -236,7 +236,7 @@ let quizData = [{
             a: "Her heresy",
             b: "Her betrayal",
             c: "Her evil heart",
-            d: "Her lack of interest",
+            d: "Her lack of interest"
         },
         trueAnswer: "a",
         explanation: "She was denounced for questioning the Solari's teachings and seeking out the heretic faith of the Lunari."
@@ -343,7 +343,7 @@ function incorrectAlert() {
  * When submit is clicked on final question, quiz area text is replaced with score area text"
  */
 function totalScore() {
-    quizArea.innerHTML = `<a href="https://universe.leagueoflegends.com/en_gb/" aria-label="Link takes user to league of legends website in new tab" target="_blank">Click hear to learn more about Runeterra!</a>`;
+    quizArea.innerHTML = (`<a href="https://universe.leagueoflegends.com/en_gb/" aria-label="Link takes user to league of legends website in new tab" target="_blank">Click hear to learn more about Runeterra!</a>`);
     let totalScore = (score / quizData.length * 100);
     if (totalScore < 50) {
     scoreArea.innerHTML = (`Your final score is ${totalScore}%. Better luck next time! Check out the link above to learn more.`)
