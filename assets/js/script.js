@@ -343,7 +343,7 @@ function incorrectAlert() {
  * When submit is clicked on final question, quiz area text is replaced with score area text"
  */
 function totalScore() {
-    quizArea.innerHTML = "";
+    quizArea.innerHTML = `<a href="https://universe.leagueoflegends.com/en_gb/" aria-label="Link takes user to league of legends website in new tab" target="_blank">Click hear to learn more about Runeterra!</a>`;
     let totalScore = (score / quizData.length * 100);
     scoreArea.innerHTML = (`Your final score is ${totalScore}%!`)
 }
