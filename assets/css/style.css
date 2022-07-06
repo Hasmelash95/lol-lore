@@ -9,7 +9,7 @@
 body {
     background: url("../images/empire-of-noxus.jpeg") no-repeat center center;
     background-size: cover;
-    background-color:  rgb(31 41 72);
+    background-color: #243356;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
 }
@@ -32,7 +32,7 @@ h1 a {
 h2 {
     text-align: center;
     padding-bottom: 30px;
-    color: #242454;
+    color: #243356;
 }
 
 .introduction,
@@ -51,7 +51,7 @@ li {
 }
 
 i {
-    color:#242454;
+    color:#243356;
 }
 
 div .ready {
@@ -61,7 +61,7 @@ div .ready {
 button {
     margin-top: 30px;
     padding: 10px;
-    background-color: rgb(31 41 72);
+    background-color: #243356;
 }
 
 button a,
@@ -70,7 +70,7 @@ button a,
     text-decoration: none;
     font-size: 1.15rem;
     line-height: 2rem;
-    color: rgb(216, 201, 198);
+    color: rgb(233, 238, 240);
 }
 
 div #quiz-btn {
@@ -80,7 +80,7 @@ div #quiz-btn {
 .pg-two {
     background: url("../images/shadow-isles-vaults.jpeg") no-repeat center center;
     background-size: cover;
-    background-color: rgb(31 41 72);
+    background-color: #243356;
 }
 
 #quiz-area {
