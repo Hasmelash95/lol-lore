@@ -7,7 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswers();
                 nextQuestion();
-            } else {
+            } else if (this.getAttribute("data-type") === "retry") {
+                restartQuiz();
+            }
+            else {
                 alert("Unknown button");
                 throw "Unknown button. Aborting..."
             }
@@ -343,4 +346,13 @@ function totalScore() {
     quizArea.innerHTML = "";
     let totalScore = (score / quizData.length * 100);
     scoreArea.innerHTML = (`Your final score is ${totalScore}%!`)
+}
+
+/**
+ * When the restart quiz button is clicked, the score reverts to 0 and the user is taken to the first question.
+ */
+function restartQuiz() {
+    score = 0;
+    currentQuestion = 0;
+    displayData();
 }
