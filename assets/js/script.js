@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // To get elements from the html
 let quizArea = document.getElementById("quiz-area");
 let submitButton = document.getElementById("submit");
-let progressBar = document.getElementById("progress-bar");
+let scoreArea = document.getElementById("score-area");
 let lolLink = document.getElementById("lol-link");
 // Defining some variables that will appear throughout the script
 let currentQuestion = 0;
@@ -355,4 +355,6 @@ function restartQuiz() {
     score = 0;
     currentQuestion = 0;
     displayData();
+    submitButton.style.display = "inline-block";
+    scoreArea.innerHTML = "";
 }
