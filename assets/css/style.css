@@ -12,6 +12,7 @@ body {
     background-color: #243356;
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
+    color: #0c1322;
 }
 
 h1, h2 {
@@ -87,6 +88,13 @@ button a,
 .nav-btn:hover,
 button.ready:hover {
     background-color: rgb(61, 136, 136);
+    cursor: pointer;
+}
+
+label:hover {
+    cursor: pointer;
+    color: rgb(61, 136, 136);
+    font-weight: bold;
 }
 
 div #quiz-btn {
@@ -126,4 +134,14 @@ button .swal2-styled.swal2-confirm {
     width: 5%;
     height: 2.5rem;
     background-color: #243356;
+}
+
+#quiz-area a {
+    text-decoration: none;
+    color: #0c1322;
+    text-align: center;
+}
+
+a span:hover {
+    text-decoration: underline;
 }
