@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 restartQuiz();
             }
             else {
-                alert("Unknown button");
+                swal.fire("Unknown button");
                 throw "Unknown button. Aborting..."
             }
 
@@ -335,7 +335,7 @@ function userProgress() {
  */
 function correctAlert() {
  let quiz = quizData[currentQuestion];
-swal("Correct!", `${quiz.explanation}`)
+swal.fire("Correct!", `${quiz.explanation}`)
 }
 
 /**
@@ -343,7 +343,7 @@ swal("Correct!", `${quiz.explanation}`)
  */
 function incorrectAlert() {
     let quiz = quizData[currentQuestion];
-    swal("Not Quite!", `${quiz.explanation}`)
+    swal.fire("Not Quite!", `${quiz.explanation}`)
 }
 
 /**
