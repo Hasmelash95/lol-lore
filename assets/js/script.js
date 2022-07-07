@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
  // Defining some variables that will appear throughout the script
  let currentQuestion = 0;
  let score = 0;
+ currentProgress.style.width = "5%"
+ let currentWidth = 5;
  
  /**
   * The questions and answers are in an array with objects and properties nested within. The expanation property will appear
@@ -285,6 +287,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
  
     quizArea.innerHTML = output.join("");
+    
  }
  
  // Calling the function defined above
@@ -320,7 +323,6 @@ document.addEventListener("DOMContentLoaded", function () {
        submitButton.style.display = "none";
        totalScore();
        progressBar.style.display = "none";
-       document.body.style.background = "#243356 url('../assets/images/mount-targon.jpeg') no-repeat center center";
     } else {
        displayData(quizData[currentQuestion++]);
        userProgress();
@@ -328,8 +330,9 @@ document.addEventListener("DOMContentLoaded", function () {
  }
  
  function userProgress() {
-    currentProgress.style.width += 5;
- }
+    currentWidth += 5;
+    currentProgress.style.width =  currentWidth + '%'
+}
  
  /**
   * Clicking submit after selecting the right answer will prompt a Correct! alert with an explanation

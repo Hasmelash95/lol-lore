@@ -46,6 +46,10 @@ h2 {
     text-align: justify;
 }
 
+.content {
+    border: 10px solid #243356;
+}
+
 li {
     list-style-type: none;
     padding: 10px 0;
