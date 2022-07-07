@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 restartQuiz();
             }
             else {
+                // Borrowed from sweetalert2
                 Swal.fire("Unknown button");
                 throw "Unknown button. Aborting..."
             }
@@ -43,7 +44,7 @@ let quizData = [{
             d: "Renekton"
         },
         trueAnswer: "c",
-        explanation: "Enraged after many years spent as a slave, Xerath killed Emperor Azir during his Ascending Ritual and took his place. Destroying Shurima in the process."
+        explanation: "Enraged after many years spent as a slave, Xerath killed Emperor Azir during his Ritual of Ascension and took his place. Destroying Shurima in the process."
     },
     {
         question: "2. Who is the Sheriff of Piltover?",
@@ -350,7 +351,7 @@ function incorrectAlert() {
  * When submit is clicked on final question, quiz area text is replaced with score area text"
  */
 function totalScore() {
-    quizArea.innerHTML = (`<a href="https://universe.leagueoflegends.com/en_gb/" aria-label="Link takes user to league of legends website in new tab" target="_blank"><i class="fa-solid fa-gem"> <span>Click here to learn more about Runeterra!<span></a>`);
+    quizArea.innerHTML = (`<a href="https://universe.leagueoflegends.com/en_gb/" aria-label="Link takes user to league of legends website in new tab" target="_blank"><span>Click here to learn more about the land of Runeterra<span> <i class="fa-solid fa-gem"></a>`);
     let totalScore = Math.floor(score / quizData.length * 100);
     if (totalScore < 50) {
     scoreArea.innerHTML = (`Your final score is ${totalScore}%. Better luck next time! Check out the link above to learn more.`)
