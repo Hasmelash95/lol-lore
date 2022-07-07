@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 nextQuestion();
             } else if (this.getAttribute("data-type") === "retry") {
                 restartQuiz();
-            }
-            else {
+            } else {
                 // Borrowed from sweetalert2
                 Swal.fire("Unknown button");
                 throw "Unknown button. Aborting..."
@@ -27,6 +26,7 @@ let scoreArea = document.getElementById("score-area");
 let lolLink = document.getElementById("lol-link");
 let progressBar = document.getElementById("progress-bar");
 let currentProgress = document.getElementById("current-progress");
+let pageTwo = document.getElementsByClassName("pg-two");
 // Defining some variables that will appear throughout the script
 let currentQuestion = 0;
 let score = 0;
@@ -321,6 +321,7 @@ function nextQuestion() {
         submitButton.style.display = "none";
         totalScore();
         progressBar.style.display = "none";
+        document.body.style.background = "#243356 url('../assets/images/mount-targon.jpeg') no-repeat center center";
     } else {
         displayData(quizData[currentQuestion++]);
         userProgress();
@@ -372,3 +373,4 @@ function restartQuiz() {
     submitButton.style.display = "inline-block";
     scoreArea.innerHTML = "";
 }
+
