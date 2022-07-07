@@ -92,11 +92,6 @@ div #quiz-btn {
     text-align: center;
 }
 
-.swal2-styled.swal2-confirm {
-    background-color:#243356;
-    color: rgb(233, 238, 240);
-}
-
 .pg-two {
     background: url("../images/shadow-isles-vaults.jpeg") no-repeat center center;
     background-size: cover;
