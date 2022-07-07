@@ -85,7 +85,7 @@ button a,
 }
 
 .nav-btn:hover,
-.ready:hover {
+button.ready:hover {
     background-color: rgb(61, 136, 136);
 }
 
