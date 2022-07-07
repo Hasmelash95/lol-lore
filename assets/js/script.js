@@ -275,7 +275,6 @@ function displayData() {
         <input type="radio" name="question${questionNumber}" value="${letter}">
         ${quiz.answers[letter]}
         </label>`);
-
     }
 
     output.push(
@@ -320,6 +319,7 @@ function nextQuestion() {
     if (currentQuestion === quizData.length - 1) {
         submitButton.style.display = "none";
         totalScore();
+        progressBar.style.display = "none";
     } else {
         displayData(quizData[currentQuestion++]);
         userProgress();
@@ -335,7 +335,7 @@ function userProgress() {
  */
 function correctAlert() {
  let quiz = quizData[currentQuestion];
-swal(`Correct! ${quiz.explanation}`)
+swal("Correct!", `${quiz.explanation}`)
 }
 
 /**
@@ -343,7 +343,7 @@ swal(`Correct! ${quiz.explanation}`)
  */
 function incorrectAlert() {
     let quiz = quizData[currentQuestion];
-    swal(`Not Quite! ${quiz.explanation}`)
+    swal("Not Quite!", `${quiz.explanation}`)
 }
 
 /**
