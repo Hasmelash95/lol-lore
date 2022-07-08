@@ -271,17 +271,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // Code credit to sitepoint for output of data
     for (letter in quiz.answers) {
        // Include label in the push so user can click on the label to select their answer
-       answers.push(`<label>
+       answers.push(`
+         <label>
          <input type="radio" name="question${questionNumber}" value="${letter}">
          ${quiz.answers[letter]}
-         </label>`);
+         </label>
+         `);
     }
  
     output.push(
-       `<div class = "page">
+       `
+       <div class = "page">
          <div class="question"> ${quiz.question} </div>
          <div class="answers"> ${answers.join("")} </div>
-         </div>`
+       </div>
+       `
     );
  
     quizArea.innerHTML = output.join("");
@@ -299,6 +303,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let correctAnswer = quizData[currentQuestion].trueAnswer;
  
     let questionNumber = currentQuestion + 1;
+   //  As the value for undefined (unchecked) cannot be read
     if (document.querySelector(`input[name="question${questionNumber}"]:checked`)) {
        let checked = document.querySelector(`input[name="question${questionNumber}"]:checked`).value;
        if (checked == correctAnswer) {
@@ -355,19 +360,27 @@ document.addEventListener("DOMContentLoaded", function () {
   * When submit is clicked on final question, quiz area text is replaced with score area text"
   */
  function totalScore() {
-    quizArea.innerHTML = (`<a href="https://universe.leagueoflegends.com/en_gb/"
+    quizArea.innerHTML = (`
+     <a href="https://universe.leagueoflegends.com/en_gb/"
      aria-label="Link takes user to league of legends website in new tab" target="_blank">
      <span>Click here to learn more about the land of Runeterra<span> 
-     <i class="fa-solid fa-gem"></a>`);
+     <i class="fa-solid fa-gem"></i></a>
+     `);
     let totalScore = Math.floor(score / quizData.length * 100);
     if (totalScore < 50) {
-       scoreArea.innerHTML = (`Your final score is ${totalScore}%. Better luck next time! 
-       Check out the link above to learn more.`)
+       scoreArea.innerHTML = (`
+       Your final score is ${totalScore}%. Better luck next time! 
+       Check out the link above to learn more.
+       `)
     } else if (totalScore < 70) {
-       scoreArea.innerHTML = (`Your final score is ${totalScore}%. Not bad at all! To buff 
-       your knowledge, check out the link above.`)
+       scoreArea.innerHTML = (`
+       Your final score is ${totalScore}%. Not bad at all! To buff 
+       your knowledge, check out the link above.
+       `)
     } else {
-       scoreArea.innerHTML = (`Your final score is ${totalScore}%. You really know your stuff! Well done LoL fan!`)
+       scoreArea.innerHTML = (`
+       Your final score is ${totalScore}%. You really know your stuff! Well done LoL fan!
+       `)
     }
  }
  
@@ -378,10 +391,10 @@ document.addEventListener("DOMContentLoaded", function () {
     score = 0;
     currentQuestion = 0;
     displayData();
+    submitButton.style.display = "inline-block";
    // Progress bar is restarted
     currentWidth = 0;
     userProgress();
     progressBar.style.display = "inline-block";
-    submitButton.style.display = "inline-block";
     scoreArea.innerHTML = "";
  }
