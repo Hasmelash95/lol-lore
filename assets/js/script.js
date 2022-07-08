@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
  const quizArea = document.getElementById("quiz-area");
  const submitButton = document.getElementById("submit");
  const scoreArea = document.getElementById("score-area");
+ let progressBar = document.getElementById("progress-bar")
  const currentProgress = document.getElementById("current-progress");
  // Defining some variables that will appear throughout the script
  let currentQuestion = 0;
@@ -156,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
        explanation: "Disconcerted by the presence of life, the Watchers bid the creatures of the Void with one task: destruction."
     },
     {
-       question: "12. What was the name of the cataclysm that merged the spirit and material realms together in the Blessed Isles?",
+       question: "12. What was the name of the cataclysm that turned the Blessed Isles into the Shadow Isles?",
        answers: {
           a: "Rune Wars",
           b: "Ruination",
@@ -392,9 +393,9 @@ document.addEventListener("DOMContentLoaded", function () {
     currentQuestion = 0;
     displayData();
     submitButton.style.display = "inline-block";
+    scoreArea.innerHTML = "";
    // Progress bar is restarted
     currentWidth = 0;
     userProgress();
     progressBar.style.display = "inline-block";
-    scoreArea.innerHTML = "";
  }
