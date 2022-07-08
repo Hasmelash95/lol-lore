@@ -1,7 +1,7 @@
 // Credit to Love Maths essentials walkthrough for page load event listener code
 // Ensure quiz begins running after page finishes loading
 document.addEventListener("DOMContentLoaded", function () {
-    let buttons = document.getElementsByClassName("nav-btn");
+    const buttons = document.getElementsByClassName("nav-btn");
     for (let button of buttons) {
        button.addEventListener("click", function () {
           if (this.getAttribute("data-type") === "submit") {
@@ -20,12 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
  })
  
  // To get elements from the html
- let quizArea = document.getElementById("quiz-area");
- let submitButton = document.getElementById("submit");
- let scoreArea = document.getElementById("score-area");
- let lolLink = document.getElementById("lol-link");
- let progressBar = document.getElementById("progress-bar");
- let currentProgress = document.getElementById("current-progress");
+ const quizArea = document.getElementById("quiz-area");
+ const submitButton = document.getElementById("submit");
+ const scoreArea = document.getElementById("score-area");
+ const currentProgress = document.getElementById("current-progress");
  // Defining some variables that will appear throughout the script
  let currentQuestion = 0;
  let score = 0;
@@ -33,10 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
  let currentWidth = 5;
  
  /**
-  * The questions and answers are in an array with objects and properties nested within. The expanation property will appear
-  * in the alert box after each submit.
+  * The questions and answers are in an array with objects and properties nested within. 
+  * The expanation property will appear in the alert box after each submit.
   */
- let quizData = [{
+ const quizData = [{
        question: "1. The great Empire of Shurima was destroyed after which Champion betrayed the Emperor?",
        answers: {
           a: "Sivir",
@@ -70,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
        explanation: "The demon Evelynn. At the age of sixteen, Vayne witnessed a woman of unspeakable beauty with horns standing over the corpses of her parents. She has vowed vengeance since."
     },
     {
-       question: "4. Who wields the sentient darkin weapon, Raast?",
+       question: "4. Who wields the sentient darkin weapon, Rhaast?",
        answers: {
           a: "Kayn",
           b: "Varus",
@@ -294,8 +292,8 @@ document.addEventListener("DOMContentLoaded", function () {
  displayData();
  
  /**
-  * On clicking submit the answer will be checked against the correctAnswer defined in this function and if correct, the score
-  * increments by one.
+  * On clicking submit the answer will be checked against the correctAnswer defined in this function
+  *  and if correct, the score increments by one.
   */
  function checkAnswers() {
     let correctAnswer = quizData[currentQuestion].trueAnswer;
@@ -315,8 +313,8 @@ document.addEventListener("DOMContentLoaded", function () {
  }
  
  /**
-  * Clicking the submit button will take user to the next question in the array until the final question where it'll take the 
-  * user to the display of their final score
+  * Clicking the submit button will take user to the next question in the array until the final question 
+  * where it'll take the user to the display of their final score.
   */
  function nextQuestion() {
     if (currentQuestion === quizData.length - 1) {
@@ -329,9 +327,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
  }
  
+ /**
+  * Used to monitor progress so user knows how far along they are.
+  */
  function userProgress() {
     currentWidth += 5;
-    currentProgress.style.width =  currentWidth + '%'
+    currentProgress.style.width =  currentWidth + "%"
 }
  
  /**
@@ -354,12 +355,17 @@ document.addEventListener("DOMContentLoaded", function () {
   * When submit is clicked on final question, quiz area text is replaced with score area text"
   */
  function totalScore() {
-    quizArea.innerHTML = (`<a href="https://universe.leagueoflegends.com/en_gb/" aria-label="Link takes user to league of legends website in new tab" target="_blank"><span>Click here to learn more about the land of Runeterra<span> <i class="fa-solid fa-gem"></a>`);
+    quizArea.innerHTML = (`<a href="https://universe.leagueoflegends.com/en_gb/"
+     aria-label="Link takes user to league of legends website in new tab" target="_blank">
+     <span>Click here to learn more about the land of Runeterra<span> 
+     <i class="fa-solid fa-gem"></a>`);
     let totalScore = Math.floor(score / quizData.length * 100);
     if (totalScore < 50) {
-       scoreArea.innerHTML = (`Your final score is ${totalScore}%. Better luck next time! Check out the link above to learn more.`)
+       scoreArea.innerHTML = (`Your final score is ${totalScore}%. Better luck next time! 
+       Check out the link above to learn more.`)
     } else if (totalScore < 70) {
-       scoreArea.innerHTML = (`Your final score is ${totalScore}%. Not bad at all! To buff your knowledge, check out the link above.`)
+       scoreArea.innerHTML = (`Your final score is ${totalScore}%. Not bad at all! To buff 
+       your knowledge, check out the link above.`)
     } else {
        scoreArea.innerHTML = (`Your final score is ${totalScore}%. You really know your stuff! Well done LoL fan!`)
     }
@@ -372,6 +378,7 @@ document.addEventListener("DOMContentLoaded", function () {
     score = 0;
     currentQuestion = 0;
     displayData();
+   // Progress bar is restarted
     currentWidth = 0;
     userProgress();
     progressBar.style.display = "inline-block";
