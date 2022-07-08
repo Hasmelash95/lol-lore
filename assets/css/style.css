@@ -80,7 +80,7 @@ button {
     background-color: #243356;
 }
 
-button a,
+a button,
 #submit,
 #retry {
     text-decoration: none;
