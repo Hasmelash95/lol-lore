@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let questionNumber = currentQuestion + 1;
     if (document.querySelector(`input[name="question${questionNumber}"]:checked`)) {
        let checked = document.querySelector(`input[name="question${questionNumber}"]:checked`).value;
-       if (checked == correctAnswer === true) {
+       if (checked == correctAnswer) {
           score++
           correctAlert();
        } else {
