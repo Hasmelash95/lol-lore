@@ -372,6 +372,9 @@ document.addEventListener("DOMContentLoaded", function () {
     score = 0;
     currentQuestion = 0;
     displayData();
+    currentWidth = 0;
+    userProgress();
+    progressBar.style.display = "inline-block";
     submitButton.style.display = "inline-block";
     scoreArea.innerHTML = "";
  }

@@ -109,6 +109,7 @@ div #quiz-btn {
     background: url("../images/shadow-isles-vaults.jpeg") no-repeat center center;
     background-size: cover;
     background-color: #243356;
+    min-height: 100vh;
 }
 
 #quiz-area {
@@ -117,6 +118,7 @@ div #quiz-btn {
 
 .question {
     padding: 10px;
+    height: 10px;
 }
 
 .answers {
