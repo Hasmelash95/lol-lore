@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
  const quizArea = document.getElementById("quiz-area");
  const submitButton = document.getElementById("submit");
  const scoreArea = document.getElementById("score-area");
- let progressBar = document.getElementById("progress-bar")
+ const progressBar = document.getElementById("progress-bar")
  const currentProgress = document.getElementById("current-progress");
  // Defining some variables that will appear throughout the script
  let currentQuestion = 0;
