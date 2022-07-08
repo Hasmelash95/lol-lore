@@ -119,6 +119,7 @@ div #quiz-btn {
 .question {
     padding: 10px;
     height: 10px;
+    margin-bottom: 50px;
 }
 
 .answers {
