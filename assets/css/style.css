@@ -133,6 +133,7 @@ main #quiz-btn {
 
 .answers {
     padding: 20px;
+    width: 200px;
 }
 
 #progress-bar {
@@ -243,3 +244,8 @@ a span:hover {
     }
 }
 
+/* For screen sizes 400px and below */
+
+@media screen and (max-width: 400px) {
+    
+}
