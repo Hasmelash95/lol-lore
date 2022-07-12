@@ -53,6 +53,7 @@ h2 {
 li {
     list-style-type: none;
     padding: 10px 0;
+    text-align: justify;
 }
 
 i {
@@ -82,7 +83,6 @@ button {
 
 .ready a {
     text-decoration: none;
-    margin: 40px;
     padding: 20px;
     background-color:#243356;
 }
@@ -128,6 +128,7 @@ main #quiz-btn {
     height: 10px;
     width: 700px;
     margin-bottom: 50px;
+    text-align: justify;
 }
 
 .answers {
@@ -183,6 +184,11 @@ a span:hover {
         width: 500px;
         height: 40px;
     }
+
+    #submit, 
+    #retry {
+        font-size: 1.25rem;
+    }
 }
 
 /* For screen sizes 700px and below */
@@ -200,8 +206,35 @@ a span:hover {
     }
 
     .question {
-        width: 300px;
+        width: 320px;
         height: 60px;
+    }
+
+    #submit, 
+    #retry {
+        font-size: 1rem;
+    }
+}
+
+/* For screen 500px and below */
+@media screen and (max-width: 500px) {
+    body {
+        letter-spacing: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .introduction,
+    li {
+        text-align: center;
+    }
+    .question {
+        width: 175px;
+        height: 70px;
+    }
+
+    #submit, 
+    #retry {
+        font-size: 1rem;
     }
 }
 
