@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-
 /**
  * Event listener to ensure page loads before functions are called.
  * Credit to Love Maths Walthrough for code hint.
@@ -47,8 +45,11 @@ function displayData() {
    let answers = [];
    let questionNumber = currentQuestion + 1;
 
-   // Code credit to sitepoint for output of data
+   // For in used to iterate over enumerable properties of the object rather than the array
    for (let letter in quiz.answers) {
+   // If statement added to ensure script knows letter is a direct property of answers 
+   if (quiz.answers.hasOwnProperty(letter)) {
+      // Code credit to sitepoint for hints on output of data
       // Include label in the push so user can click on the label to select their answer
       answers.push(`
         <label>
@@ -56,7 +57,7 @@ function displayData() {
         ${quiz.answers[letter]}
         </label>
         `);
-   }
+   }}
 
    output.push(
       `

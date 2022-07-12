@@ -62,6 +62,7 @@ i {
 h3 {
     text-align: center;
     font-weight: 400;
+    margin-bottom: 60px;
 }
 
 section .ready {
@@ -80,7 +81,14 @@ button {
     background-color: #243356;
 }
 
-a button,
+.ready a {
+    text-decoration: none;
+    margin: 40px;
+    padding: 20px;
+    background-color:#243356;
+}
+
+.ready a,
 #submit,
 #retry {
     text-decoration: none;
@@ -90,7 +98,7 @@ a button,
 }
 
 .nav-btn:hover,
-button.ready:hover {
+.ready a:hover {
     background-color: rgb(61, 136, 136);
     cursor: pointer;
 }
@@ -156,3 +164,6 @@ a span:hover {
     text-align: center;
     padding-top: 50px;
 }
+
+/* Media queries */
+
