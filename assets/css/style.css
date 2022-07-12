@@ -152,7 +152,7 @@ main #quiz-btn {
 #quiz-area a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #0c1322;
+    color: #1d4359;
     text-align: center;
 }
 
@@ -194,17 +194,27 @@ a span:hover {
 
 /* For screen sizes 700px and below */
 @media screen and (max-width: 700px) {
+
+    body,
+    .ready a { 
+        font-size: 1rem;
+    }
+
+    #quiz-area {
+        padding: 15px;
+    }
+
+    button {
+        padding: 15px;
+    }
+
     .question {
         width: 400px;
     }
 }
 
-/* For screen sizes 600px and below */
-@media screen and (max-width: 600px) {
-    body,
-    .ready a { 
-        font-size: 1rem;
-    }
+/* For screen sizes 615px and below */
+@media screen and (max-width: 615px) {
 
     .question {
         width: 320px;
@@ -220,8 +230,7 @@ a span:hover {
 /* For screen 500px and below */
 @media screen and (max-width: 500px) {
     body {
-        letter-spacing: 0.5rem;
-        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
     }
 
     .introduction,
@@ -229,8 +238,9 @@ a span:hover {
         text-align: center;
     }
     .question {
-        width: 175px;
+        width: 250px;
         height: 70px;
+        text-align: left;
     }
 
     #submit, 
@@ -244,8 +254,30 @@ a span:hover {
     }
 }
 
-/* For screen sizes 400px and below */
+/* For screen sizes 450px and below */
 
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .question {
+        width: 175px;
+    }
+}
+
+/* For screen sizes 400px and below */
 @media screen and (max-width: 400px) {
+
+    #quiz-area {
+        padding: 0;
+    }
     
+    .question {
+        width: 125px;
+    }
+
+    button {
+        padding: 5px;
+    }
 }
