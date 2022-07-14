@@ -141,10 +141,12 @@ function incorrectAlert() {
  */
 function totalScore() {
    quizArea.innerHTML = (`
+   <div id="lol-web">
     <a href="https://universe.leagueoflegends.com/en_gb/"
     aria-label="Link takes user to league of legends website in new tab" target="_blank">
-    <span>Click here to learn more about the land of Runeterra<span> 
+    <span>Learn more about Runeterra!<span> 
     <i class="fa-solid fa-gem"></i></a>
+    </div>
     `);
    let totalScore = Math.floor(score / quizData.length * 100);
    if (totalScore < 50) {

@@ -133,7 +133,6 @@ main #quiz-btn {
 
 .answers {
     padding: 20px;
-    width: 200px;
 }
 
 #progress-bar {
@@ -149,7 +148,7 @@ main #quiz-btn {
     background-color: #243356;
 }
 
-#quiz-area a {
+#lol-web a {
     text-decoration: none;
     text-transform: uppercase;
     color: #1d4359;
@@ -225,6 +224,10 @@ a span:hover {
     #retry {
         font-size: 1rem;
     }
+
+    #lol-web {
+        width: 200px;
+    }
 }
 
 /* For screen 500px and below */
@@ -241,6 +244,10 @@ a span:hover {
         width: 250px;
         height: 70px;
         text-align: left;
+    }
+
+    .answers {
+        width: 200px;
     }
 
     #submit, 
@@ -279,5 +286,9 @@ a span:hover {
 
     button {
         padding: 5px;
+    }
+
+    #lol-web {
+        width: 170px;
     }
 }

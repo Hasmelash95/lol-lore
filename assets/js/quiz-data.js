@@ -160,7 +160,7 @@
     question: "15. To erase the memory of siphoning the essence of her lover, who did Ahri seek out?",
     answers: {
        a: "The Kinkou",
-       b: "The Order of the Shadow",
+       b: "The Shadow Order",
        c: "The Witch Gardener",
        d: "The Golden Demon"
     },
