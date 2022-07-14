@@ -84,12 +84,12 @@ displayData();
 function checkAnswers() {
    let correctAnswer = quizData[currentQuestion].trueAnswer;
    let questionNumber = currentQuestion + 1;
-   
+
    //  As the value for undefined (unchecked) cannot be read
    let inputCheck = document.querySelector(`input[name="question${questionNumber}"]:checked`)
    if (inputCheck) {
       let checked = inputCheck.value;
-      if (checked == correctAnswer) {
+      if (checked === correctAnswer) {
          score++;
          correctAlert();
       } else {
