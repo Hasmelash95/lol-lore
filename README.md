@@ -2,7 +2,7 @@
 
 ## League of Legends Lore Quiz
 
-A quiz for fans of the multiplayer online battle arena game created and developed by Riot Games. The world of League of Legends holds over 140 champions, each with unique backstories, from thirteen different regions with fleshed out lore. The wildly successful Netflix show Arcane, based on the characters in the regions of Piltover and Zaun, has drawn interest from the general public in the lore of LoL. This quiz is designed for fans of the game lore, fans of the game who wish to know about the lore or anyone interested in the world of LoL to test their knowledge and learn new things. 
+A quiz for fans of the multiplayer online battle arena game created and developed by Riot Games. The world of League of Legends holds over 140 champions, each with unique backstories, from thirteen different regions with fleshed out lore. The wildly successful Netflix show Arcane, based on the characters in the regions of Piltover and Zaun, has drawn interest from the general public in the lore of LoL. This quiz is designed for fans of the game lore, fans of the game who wish to know about the lore or anyone interested in the world of LoL, to test their knowledge and learn new things. 
 
 ## Table of Contents
 
@@ -42,13 +42,21 @@ A "restart quiz" button beside the "submit answer" button remains throughout the
 
 A progress bar below the submit and restart buttons allows users to have steady reminders of how far along they are.  
 
-On clicking "submit answer" after the final question, the quiz area text will be replaced with the external link to the league of legends website (which opens in a new tab), the "restart quiz" button will remain and the score will be displayed below with custom messages depending on the score. 
+On clicking "submit answer" after the final question, the quiz area text will be replaced with the external link to the League of Legends website (which opens in a new tab), the "restart quiz" button will remain and the score will be displayed below with custom messages depending on the score. 
 
 ### Skeleton 
 
 (links to wireframes will go here)
 
+### Surface 
 
+The coloring of the website was chosen with accessibility in mind, ensuring the text stands out against the background. The header used the a shade of white (rgb(233, 238, 240)) to stand out against the background image. While the main text background used the same color with an opacity of 0.8 while the text color was dark blue for the headings (#243356) and almost-black (#0c1322) for the main text. The buttons used the former for their background, although switches to a turquoise shade (rgb(61, 136, 136)) with white text on mouse hover. The text color of the labels of the multiple choice selections also switches to turquoise on mouse hover. 
+
+Fonts were imported from Google Fonts. Open Sans was used for the body of the text (with a sans-serif backup) while Bitter was used for the headings (with a serif backup). The fonts give the site a casual elegance. 
+
+Font awesome icons (a gemstone, to go with the rune theme) were added for the list items and as decoration for the external link at the end. A gemstone emoji acts as the favicon icon. 
+
+The alert boxes used plugins from sweetalert2, as they are more visually appealing than the default javascript alerts and are easier for the user to read. 
 
 
 
