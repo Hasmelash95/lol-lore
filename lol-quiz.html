@@ -4,30 +4,37 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="A league of legends lore quiz">
+      <meta name="keywords" content="league of legends, lol, league of legends lore, league of legends quiz">
+      <meta name="author" content="Hermon Asmelash">
       <link rel="stylesheet" href="assets/css/style.css">
       <!-- Sweet alert, to style alert boxes. Inspiration to use resource from elomasney-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.css">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
       <title>League of Legends Lore | Quiz</title>
    </head>
+<!-- Header -->
    <body class="pg-two">
       <header>
          <h1><a href="index.html">League of Legends Lore</a></h1>
       </header>
+      <!-- Questions and answers -->
       <main class = "content">
          <div id="quiz-area"></div>
          <div id="quiz-btn">
             <button data-type="submit" id="submit" class="nav-btn">Submit Answer</button>
             <button data-type="retry" id="retry" class="nav-btn">Restart Quiz</button>
          </div>
+         <!-- Bar for user to see how close they are to the end -->
          <div id="progress-bar">
             <div id="current-progress"></div>
          </div>
+         <!-- This will appear after the last question is submitted and replace quiz area text -->
          <div id="score-area"></div>
       </main>
       <!-- Font awesome -->
       <script src="https://kit.fontawesome.com/86de956f5a.js" crossorigin="anonymous"></script>
-      <!-- External JS script -->
+      <!-- External JS scripts -->
       <script src="assets/js/quiz-data.js"></script>
       <script src="assets/js/script.js"></script>
       <!-- Sweet alert, to style alert boxes -->

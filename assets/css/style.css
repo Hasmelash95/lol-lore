@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Open+Sans&display=swap');
+/* Open Sans and Bitter fonts imported from google fonts */
 
 * {
 	margin: 0;
@@ -6,6 +7,7 @@
 	border: none;
 }
 
+/* Body of website */
 body {
     background: url("../images/empire-of-noxus.jpeg") no-repeat center center;
     background-size: cover;
@@ -15,14 +17,16 @@ body {
     color: #0c1322;
 }
 
+/* Logo */
+header {
+    margin: 30px;
+}
+
+/* Headings */
 h1, h2 {
     font-family: "Bitter", serif;
     text-transform: uppercase;
     font-weight: 600;
-}
-
-header {
-    margin: 30px;
 }
 
 h1 a {
@@ -36,6 +40,7 @@ h2 {
     color: #243356;
 }
 
+/* Where most of the content of the website will end up */
 .introduction,
 .content {
     max-width: 800px;
@@ -49,6 +54,8 @@ h2 {
 .content {
     border: 10px solid #243356;
 }
+
+/* Landing page */
 
 li {
     list-style-type: none;
@@ -70,6 +77,7 @@ section .ready {
     margin-top: 80px;
 }
 
+/* Quiz page */
 label {
     display: block;
     padding: 10px 0;
@@ -112,6 +120,7 @@ main #quiz-btn {
     text-align: center;
 }
 
+/* Body of second page with different background image */
 .pg-two {
     background: url("../images/shadow-isles-vaults.jpeg") no-repeat center center;
     background-size: cover;
