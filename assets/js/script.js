@@ -21,7 +21,7 @@
    }
 });
 
-// To get elements from the html
+// To get elements from the HTML
 const quizArea = document.getElementById("quiz-area");
 const submitButton = document.getElementById("submit");
 const scoreArea = document.getElementById("score-area");
@@ -88,7 +88,7 @@ function checkAnswers() {
    let correctAnswer = quizData[currentQuestion].trueAnswer;
    let questionNumber = currentQuestion + 1;
 
-   //  As the value for undefined (unchecked) cannot be read
+   //  As the value for undefined (unchecked) cannot be read, an if statement was added
    let inputCheck = document.querySelector(`input[name="question${questionNumber}"]:checked`)
    if (inputCheck) {
       let checked = inputCheck.value;
@@ -120,6 +120,7 @@ function nextQuestion() {
 
 /**
  * Used to monitor progress so user knows how far along they are.
+ * It should increment by 5% with each new question.
  */
 function userProgress() {
    currentWidth += 5;
@@ -127,7 +128,7 @@ function userProgress() {
 }
 
 /**
- * Clicking submit after selecting the right answer will prompt a Correct! alert with an explanation
+ * Clicking submit after selecting the right answer will prompt a Correct! alert with an explanation.
  */
 function correctAlert() {
    let quiz = quizData[currentQuestion];
@@ -135,7 +136,7 @@ function correctAlert() {
 }
 
 /**
- * Clicking submit after selecting the wrong answer (or no answer) will prompt a Not Quite! alert with an explanation
+ * Clicking submit after selecting the wrong answer (or no answer) will prompt a Not Quite! alert with an explanation.
  */
 function incorrectAlert() {
    let quiz = quizData[currentQuestion];
@@ -143,7 +144,7 @@ function incorrectAlert() {
 }
 
 /**
- * When submit is clicked on final question, quiz area text is replaced with score area text"
+ * When submit is clicked on final question, quiz area text is replaced with score area text".
  */
 function totalScore() {
    // Link to league of legends website
