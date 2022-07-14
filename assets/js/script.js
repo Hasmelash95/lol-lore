@@ -2,7 +2,7 @@
  * Event listener to ensure page loads before functions are called.
  * Credit to Love Maths Walthrough for code hint.
  */
-document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
    const buttons = document.getElementsByClassName("nav-btn");
    for (let button of buttons) {
       button.addEventListener("click", function () {
@@ -30,6 +30,7 @@ const currentProgress = document.getElementById("current-progress");
 // Defining some variables that will appear throughout the script
 let currentQuestion = 0;
 let score = 0;
+// Defining variable for progress bar
 currentProgress.style.width = "5%";
 let currentWidth = 5;
 
@@ -47,17 +48,18 @@ function displayData() {
 
    // For in used to iterate over enumerable properties of the object rather than the array
    for (let letter in quiz.answers) {
-   // If statement added to ensure script knows letter is a direct property of answers 
-   if (quiz.answers.hasOwnProperty(letter)) {
-      // Code credit to sitepoint for hints on output of data
-      // Include label in the push so user can click on the label to select their answer
-      answers.push(`
+      // If statement added to ensure script knows letter is a direct property of answers 
+      if (quiz.answers.hasOwnProperty(letter)) {
+         // Code credit to sitepoint for output of data
+         // Include label in the push so user can click on the label to select their answer
+         answers.push(`
         <label>
         <input type="radio" name="question${questionNumber}" value="${letter}">
         ${quiz.answers[letter]}
         </label>
         `);
-   }}
+      }
+   }
 
    output.push(
       `
@@ -69,7 +71,7 @@ function displayData() {
    );
 
    quizArea.innerHTML = output.join("");
-   
+
 }
 
 // Calling the function defined above
@@ -83,7 +85,7 @@ function checkAnswers() {
    let correctAnswer = quizData[currentQuestion].trueAnswer;
 
    let questionNumber = currentQuestion + 1;
-  //  As the value for undefined (unchecked) cannot be read
+   //  As the value for undefined (unchecked) cannot be read
    if (document.querySelector(`input[name="question${questionNumber}"]:checked`)) {
       let checked = document.querySelector(`input[name="question${questionNumber}"]:checked`).value;
       if (checked == correctAnswer) {
@@ -117,7 +119,7 @@ function nextQuestion() {
  */
 function userProgress() {
    currentWidth += 5;
-   currentProgress.style.width =  currentWidth + "%";
+   currentProgress.style.width = currentWidth + "%";
 }
 
 /**
@@ -140,6 +142,7 @@ function incorrectAlert() {
  * When submit is clicked on final question, quiz area text is replaced with score area text"
  */
 function totalScore() {
+   // Link to league of legends website
    quizArea.innerHTML = (`
    <div id="lol-web">
     <a href="https://universe.leagueoflegends.com/en_gb/"
@@ -148,12 +151,15 @@ function totalScore() {
     <i class="fa-solid fa-gem"></i></a>
     </div>
     `);
+   // Calculating the percentage
    let totalScore = Math.floor(score / quizData.length * 100);
+   // For scores less than 50%
    if (totalScore < 50) {
       scoreArea.innerHTML = (`
       Your final score is ${totalScore}%. Better luck next time! 
       Check out the link above to learn more.
       `);
+      // For scores less than 70%
    } else if (totalScore < 70) {
       scoreArea.innerHTML = (`
       Your final score is ${totalScore}%. Not bad at all! To buff 
@@ -175,7 +181,7 @@ function restartQuiz() {
    displayData();
    submitButton.style.display = "inline-block";
    scoreArea.innerHTML = "";
-  // Progress bar is restarted
+   // Progress bar is restarted
    currentWidth = 0;
    userProgress();
    progressBar.style.display = "inline-block";
