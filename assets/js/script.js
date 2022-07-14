@@ -43,6 +43,7 @@ function displayData() {
    let quiz = quizData[currentQuestion];
    // This variable will contain all the data displayed on the page
    let output = [];
+   // This variable will contain the multiple choices per question
    let answers = [];
    let questionNumber = currentQuestion + 1;
 
@@ -61,6 +62,7 @@ function displayData() {
       }
    }
 
+   // Pushing the question and answers array (defined above) into the output arrays
    output.push(
       `
       <div class = "page">
@@ -70,6 +72,7 @@ function displayData() {
       `
    );
 
+   // Pushing the output array into the HTML area specified
    quizArea.innerHTML = output.join("");
 
 }
