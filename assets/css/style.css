@@ -128,7 +128,7 @@ main #quiz-btn {
     min-height: 100vh;
 }
 
-.pages {
+.page {
     padding: 30px;
 }
 
@@ -253,7 +253,7 @@ a span:hover {
         font-size: 1rem;
     }
 
-    .pages {
+    .page {
         padding: 15px;
     }
 
@@ -313,8 +313,6 @@ a span:hover {
         padding: 30px 10px
     }
     
-    
-
     .swal2-html-container,
     .swal2-title {
         letter-spacing: normal;
@@ -336,7 +334,7 @@ a span:hover {
 /* For screen sizes 400px and below */
 @media screen and (max-width: 400px) {
 
-    .pages {
+    .page {
         padding: 0;
     }
     
