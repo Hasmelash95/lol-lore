@@ -161,7 +161,6 @@ main #quiz-btn {
     text-decoration: none;
     text-transform: uppercase;
     color: #1d4359;
-    text-align: center;
 }
 
 a span:hover {
@@ -195,6 +194,21 @@ a span:hover {
     text-align: center;
     font-family: "Bitter", serif;
     background-color: rgba(36, 51, 86, 0.3);
+}
+
+.get-certified {
+    margin-left: 35%;
+}
+
+.get-certified a {
+    color: #1d4359;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+.get-certified a:hover {
+    text-decoration: underline;
 }
 
 /* Media queries */

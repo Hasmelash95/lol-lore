@@ -28,7 +28,7 @@ const scoreArea = document.getElementById("score-area");
 const progressBar = document.getElementById("progress-bar");
 const currentProgress = document.getElementById("current-progress");
 const getCertificate = document.getElementById("certificate");
-// getCertificate.style.display = "none";
+getCertificate.style.display = "none";
 // Defining some variables that will appear throughout the script
 let currentQuestion = 0;
 let score = 0;
@@ -195,6 +195,9 @@ function restartQuiz() {
    progressBar.style.display = "inline-block";
 }
 
+/**
+ * For those who score 70% or higher, link to get a certificate will appear at the end.
+ */
 function rewardCertificate() {
-   getCertificate.style.display = "inline-block"
+   getCertificate.style.display = "block"
 }
