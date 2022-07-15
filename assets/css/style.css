@@ -128,7 +128,7 @@ main #quiz-btn {
     min-height: 100vh;
 }
 
-#quiz-area {
+.pages {
     padding: 30px;
 }
 
@@ -155,6 +155,10 @@ main #quiz-btn {
     width: 5%;
     height: 2.5rem;
     background-color: #243356;
+}
+
+div #lol-web {
+    padding: 30px 150px;
 }
 
 #lol-web a {
@@ -207,16 +211,16 @@ a span:hover {
     padding: 30px;
 }
 
-.get-certified a:hover {
-    text-decoration: underline;
-}
-
 /* Media queries */
 
 /* For screen sizes 1000px and below */
 @media screen and (max-width: 1000px) {
     .question {
         width: 600px;
+    }
+
+    div #lol-web {
+        padding: 30px 80px;
     }
 }
 
@@ -235,6 +239,10 @@ a span:hover {
     #retry {
         font-size: 1.25rem;
     }
+
+    div #lol-web {
+        padding: 30px 50px;
+    }
 }
 
 /* For screen sizes 700px and below */
@@ -245,7 +253,7 @@ a span:hover {
         font-size: 1rem;
     }
 
-    #quiz-area {
+    .pages {
         padding: 15px;
     }
 
@@ -301,6 +309,12 @@ a span:hover {
         font-size: 1rem;
     }
 
+    div #lol-web {
+        padding: 30px 10px
+    }
+    
+    
+
     .swal2-html-container,
     .swal2-title {
         letter-spacing: normal;
@@ -322,7 +336,7 @@ a span:hover {
 /* For screen sizes 400px and below */
 @media screen and (max-width: 400px) {
 
-    #quiz-area {
+    .pages {
         padding: 0;
     }
     

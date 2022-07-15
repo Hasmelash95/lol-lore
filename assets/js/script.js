@@ -29,6 +29,8 @@ const progressBar = document.getElementById("progress-bar");
 const currentProgress = document.getElementById("current-progress");
 const getCertificate = document.getElementById("certificate");
 getCertificate.style.display = "none";
+const inputAnswers = document.getElementsByClassName("answers");
+const gemStone = document.getElementById("hover-gem");
 // Defining some variables that will appear throughout the script
 let currentQuestion = 0;
 let score = 0;
@@ -58,7 +60,7 @@ function displayData() {
          answers.push(`
         <label>
         <input type="radio" name="question${questionNumber}" value="${letter}">
-        ${quiz.answers[letter]}
+        ${quiz.answers[letter]} 
         </label>
         `);
       }
@@ -68,15 +70,14 @@ function displayData() {
    output.push(
       `
       <div class = "page">
-        <div class="question"> ${quiz.question} </div>
+        <div class="question"> ${quiz.question} <i class="fa-solid fa-gem"></i> </div>
         <div class="answers"> ${answers.join("")} </div>
       </div>
       `
    );
 
    // Pushing the output array into the HTML area specified
-   quizArea.innerHTML = output.join("");
-
+   quizArea.innerHTML = output;
 }
 
 // Calling the function defined above
@@ -193,6 +194,7 @@ function restartQuiz() {
    currentWidth = 0;
    userProgress();
    progressBar.style.display = "inline-block";
+   getCertificate.style.display = "none";
 }
 
 /**
