@@ -46,7 +46,23 @@ On clicking "submit answer" after the final question, the quiz area text will be
 
 ### Skeleton 
 
-(links to wireframes will go here)
+#### Wireframes
+
+[Landing Page](https://user-images.githubusercontent.com/103432143/179371554-3aec7ae5-1a57-4f32-8e72-22ca8764582f.png)
+
+[Landing Page mobile](https://user-images.githubusercontent.com/103432143/179371583-7c837eee-65cd-415f-9f66-601029bee440.png)
+
+[Quiz Page](https://user-images.githubusercontent.com/103432143/179371643-49a53800-85f6-4aea-bdab-2465ad055d96.png)
+
+[Quiz Page mob](https://user-images.githubusercontent.com/103432143/179371662-2cce353c-3647-48fc-8e14-45f2d3f081e6.png)
+
+[Quiz Score](https://user-images.githubusercontent.com/103432143/179371666-ffe3703c-a0e7-44cc-937d-a91a8cdbc2b7.png)
+
+[Quiz Score mob](https://user-images.githubusercontent.com/103432143/179371757-5abb37b0-e772-4d46-ae1f-870e3f4aab83.png)
+
+[Certificate](https://user-images.githubusercontent.com/103432143/179371761-0f0c971f-d1ac-4134-8326-49c447e90aab.png)
+
+[Certificate mob](https://user-images.githubusercontent.com/103432143/179371763-654d6034-8a13-4ce9-b8a2-1d2b46354892.png)
 
 ### Surface 
 
