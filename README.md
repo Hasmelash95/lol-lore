@@ -60,6 +60,8 @@ On clicking "submit answer" after the final question, the quiz area text will be
 
 [Quiz Score mob](https://user-images.githubusercontent.com/103432143/179371757-5abb37b0-e772-4d46-ae1f-870e3f4aab83.png)
 
+[Quiz Score with Certificate link](https://user-images.githubusercontent.com/103432143/179371924-ec2ca91a-d310-4c87-936d-bb0381b869dd.png)
+
 [Certificate](https://user-images.githubusercontent.com/103432143/179371761-0f0c971f-d1ac-4134-8326-49c447e90aab.png)
 
 [Certificate mob](https://user-images.githubusercontent.com/103432143/179371763-654d6034-8a13-4ce9-b8a2-1d2b46354892.png)
