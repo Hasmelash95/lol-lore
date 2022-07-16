@@ -187,17 +187,17 @@ a span:hover {
 
 #pg-three h1 {
     font-size: 3rem;
-    background-color: rgba(36, 51, 86, 0.4);
+    background-color: rgba(36, 51, 86, 0.2);
 }
 
 #a-legend {
-    margin: 120px auto 0;
+    margin: 200px auto 0;
     padding: 10px;
     width: 50%;
     font-size: 3rem;
     text-align: center;
     font-family: "Bitter", serif;
-    background-color: rgba(36, 51, 86, 0.3);
+    background-color: rgba(36, 51, 86, 0.2);
 }
 
 .get-certified {
