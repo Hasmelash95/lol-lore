@@ -56,7 +56,25 @@ Fonts were imported from Google Fonts. Open Sans was used for the body of the te
 
 Font awesome icons (a gemstone, to go with the rune theme) were added for the list items and as decoration for the external link at the end. A gemstone emoji acts as the favicon icon. 
 
-The alert boxes used plugins from sweetalert2, as they are more visually appealing than the default javascript alerts and are easier for the user to read. 
+The alert boxes used plugins from sweetalert2, as they are more visually appealing than the default javascript alerts and are easier for the user to read.
+
+
+## Features
+
+A logo on the left hand side remains present during the different states of the app (the landing page, each question and the certificate page). Clicking on the logo will send the user back to the landing page should they wish to read the contens again. 
+
+![Screenshot 2022-07-16 at 18 24 37](https://user-images.githubusercontent.com/103432143/179366261-260d7f9a-4895-49f3-94d0-bb9e524ba859.png)
+
+The first paragraph of text offers an introduction so users know what the site is about and draws in their interest. 
+
+![Screenshot 2022-07-16 at 18 25 04](https://user-images.githubusercontent.com/103432143/179366307-88c5d803-d0f7-4fae-8a3a-9b03b2e4053a.png)
+
+The second section offers instructions on how to start and proceed with the quiz, giving the user an overview of how the game works. Gemstones are used in liue of bullet points because of similarities to many components of League lore (such as the nexus and hex crystals). 
+
+![Screenshot 2022-07-16 at 18 49 22](https://user-images.githubusercontent.com/103432143/179366442-69f6e1dc-00ba-452a-b987-f860605d7a99.png)
+
+The "Ready?" button is a call to action, prompting the user to click on the button (at which point the background and text colors shift) to take them to the quiz page.
+
 
 
 
