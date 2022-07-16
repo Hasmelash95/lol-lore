@@ -211,6 +211,10 @@ a span:hover {
     padding: 30px;
 }
 
+.get-certified a:hover {
+    text-decoration: underline;
+}
+
 /* Media queries */
 
 /* For screen sizes 1000px and below */
