@@ -61,7 +61,9 @@ The alert boxes used plugins from sweetalert2, as they are more visually appeali
 
 ## Features
 
-A logo on the left hand side remains present during the different states of the app (the landing page, each question and the certificate page). Clicking on the logo will send the user back to the landing page should they wish to read the contens again. 
+### Landing Page
+
+The landing page has a background image of buildings within Noxus Prime (the capital city of the Noxan Empire). A logo on the left hand side remains present during the different states of the app (the landing page, each question and the certificate page). Clicking on the logo will send the user back to the landing page should they wish to read the contens again. 
 
 ![Screenshot 2022-07-16 at 18 24 37](https://user-images.githubusercontent.com/103432143/179366261-260d7f9a-4895-49f3-94d0-bb9e524ba859.png)
 
@@ -74,6 +76,47 @@ The second section offers instructions on how to start and proceed with the quiz
 ![Screenshot 2022-07-16 at 18 49 22](https://user-images.githubusercontent.com/103432143/179366442-69f6e1dc-00ba-452a-b987-f860605d7a99.png)
 
 The "Ready?" button is a call to action, prompting the user to click on the button (at which point the background and text colors shift) to take them to the quiz page.
+
+### Quiz Section
+
+![Screenshot 2022-07-16 at 18 25 47](https://user-images.githubusercontent.com/103432143/179366611-a401f659-525b-4903-a1d2-06250766f291.png)
+
+A question is displayed one at a time against a background image different from the landing page, the vaults of the Shadow Isles. The user selects from the four options (they are able to click on the label or the radio button to do this) and then they simply click on the submit button.
+
+![Screenshot 2022-07-16 at 18 26 17](https://user-images.githubusercontent.com/103432143/179366620-299ba126-edff-4b41-9dba-a091c7fb9155.png)
+
+An alert box styled by sweetalert2 returns whether the answer was correct with a lore explanation. Correct answers get a "Correct!" message. 
+
+![Screenshot 2022-07-16 at 18 26 35](https://user-images.githubusercontent.com/103432143/179366627-15450124-45f1-4a3f-8398-a1a0e2140418.png)
+
+![Screenshot 2022-07-16 at 18 27 01](https://user-images.githubusercontent.com/103432143/179366637-3a7558e9-04fd-4dd9-8412-46d85ce19138.png)
+
+Clicking on the wrong answer and submitting prompts another alert box with a "Not Quite!" message, also followed by a lore explanation. The user can click "OK" to remove the alert box, although clicking any area of the page or simply pressing the "enter" button should remove it, allowing them to proceed to the next question.
+
+![Screenshot 2022-07-16 at 18 27 17](https://user-images.githubusercontent.com/103432143/179366641-553b3782-67d6-45ed-b68c-e233dc02d3de.png)
+
+A progress bar is present and updates everytime the user moves on to a new question, the width of the bar increasing incrementally so the user is always aware how far along they are. 
+
+![Screenshot 2022-07-16 at 18 38 49](https://user-images.githubusercontent.com/103432143/179366667-4feead8c-7e26-442f-8f3e-c3068979079b.png)
+
+Submitting the final answer takes the user to their final score, with a custom message depending on the score they've gotten (see below). They also have the opportunity to check out the League of Legends Universe website by clicking the link (which opens in a new tab).Clicking on the "Restart Quiz" button sends them to the first question, with their score and progress bar reset. 
+
+![Screenshot 2022-07-16 at 18 30 05](https://user-images.githubusercontent.com/103432143/179366784-fa7e0aac-8c6c-4949-856e-79c448de3630.png)
+
+![Screenshot 2022-07-16 at 18 30 52](https://user-images.githubusercontent.com/103432143/179366788-b592304e-375f-43a2-9b87-628d5ff777bc.png)
+
+![Screenshot 2022-07-16 at 18 31 22](https://user-images.githubusercontent.com/103432143/179366792-504c77df-9f54-4985-b34f-d1f2582b3833.png)
+
+The custom message for scores 40-69%:
+
+![Screenshot 2022-07-16 at 18 34 58](https://user-images.githubusercontent.com/103432143/179366800-f5071b0e-7031-407d-985f-11f01248a032.png)
+
+The custom message for scores 70% and above - along with a certificate link which opens in a new tab:
+
+![Screenshot 2022-07-16 at 18 36 43](https://user-images.githubusercontent.com/103432143/179366811-4226573a-c1c6-4c66-9057-58ea360f42d4.png)
+
+
+
 
 
 
