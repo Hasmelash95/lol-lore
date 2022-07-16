@@ -115,6 +115,16 @@ The custom message for scores 70% and above - along with a certificate link whic
 
 ![Screenshot 2022-07-16 at 18 36 43](https://user-images.githubusercontent.com/103432143/179366811-4226573a-c1c6-4c66-9057-58ea360f42d4.png)
 
+### Certificate 
+
+The Certificate page uses the background image of Mount Targon - a gruelling journey up a mountain to the top to commune with Aspects. An congratulatory certificate for users who score 70% and above. Users can print certificate if they so wish or save as a PDF and share with friends.
+
+![Screenshot 2022-07-16 at 20 02 15](https://user-images.githubusercontent.com/103432143/179368875-24ab6a16-d11a-4bc5-9a57-2f3cb8cc1c89.png)
+
+Clicking "Restart Quiz" will hide the Certificate link once more. 
+
+
+
 
 
 
