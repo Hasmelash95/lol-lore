@@ -29,8 +29,6 @@ const progressBar = document.getElementById("progress-bar");
 const currentProgress = document.getElementById("current-progress");
 const getCertificate = document.getElementById("certificate");
 getCertificate.style.display = "none";
-const inputAnswers = document.getElementsByClassName("answers");
-const gemStone = document.getElementById("hover-gem");
 // Defining some variables that will appear throughout the script
 let currentQuestion = 0;
 let score = 0;
@@ -45,8 +43,8 @@ let currentWidth = 5;
 function displayData() {
 
    let quiz = quizData[currentQuestion];
-   // This variable will contain all the data displayed on the page
-   let output = [];
+   // This variable will contain the data displayed on the page
+   let quizOutput = [];
    // This variable will contain the multiple choices per question
    let answers = [];
    let questionNumber = currentQuestion + 1;
@@ -67,7 +65,7 @@ function displayData() {
    }
 
    // Pushing the question and answers array (defined above) into the output arrays
-   output.push(
+   quizOutput.push(
       `
       <div class = "page">
         <div class="question"> ${quiz.question} <i class="fa-solid fa-gem"></i> </div>
@@ -77,7 +75,7 @@ function displayData() {
    );
 
    // Pushing the output array into the HTML area specified
-   quizArea.innerHTML = output;
+   quizArea.innerHTML = quizOutput;
 }
 
 // Calling the function defined above
