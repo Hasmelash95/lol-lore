@@ -219,8 +219,22 @@ Certificate:
 
 ### Browser Compatibility 
 
+### User Stories 
 
+1. I'm a huge fan of League of Legends, both the game and the lore and would love to test my knowledge with a challenging but easy to use quiz.
+PASS - The quiz is fun and challenging, though easy to navigate through, and provides fans with the option of getting a certificate which they can download and print. 
 
+2. I play League of Legends but I'm not so familiar with the lore, I'd like to see what I know, if anything.
+PASS - The quiz offers feedback with every answer submitted in the form of lore explanations to help fill in the gaps in their knowledge.
+
+3. I don't know much about League of Legends but my friends talk about it often, I'd like to try a quiz in the hopes of learning more.
+PASS - The quiz offers feedback with every answer submitted -and- offers a link to the League of Legends Universe website for those unfamiliar with its existence. 
+
+4. I loved Arcane and wish to know more about the lore of League of Legends.
+PASS - The quiz includes questions about the characters in the Arcane series so fans of the show can feel a sense of familiarity there. The different topics covered by the quiz offer a gateway to the many different areas of lore not covered by the series. 
+
+5. I wish to get my friends into League of Legends lore and wish to find an easily accessible method to do so.
+PASS - The "Restart Quiz" button allows users to attempt the quiz as many times as they'd like, at any point, with their scores being reset. Users can share the quiz with their friends, who can learn in the process as well as gain access to the link to the lore website once they complete the quiz. 
 
 
 
