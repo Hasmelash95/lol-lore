@@ -141,6 +141,31 @@ The Certificate page uses the background image of Mount Targon - a gruelling jou
 
 Clicking "Restart Quiz" will hide the Certificate link once more. 
 
+## Testing 
+
+### Validation 
+
+HTML files were validated using W3C Markup Validation Service, with all three showing no errors or warnings.
+
+![Screenshot 2022-07-18 at 06 22 13](https://user-images.githubusercontent.com/103432143/179450383-ed5daba5-986d-473c-9912-6bab24e02289.png)
+
+![Screenshot 2022-07-18 at 06 23 15](https://user-images.githubusercontent.com/103432143/179450398-a1839d8b-6741-433a-bb55-4b5a5547e836.png)
+
+![Screenshot 2022-07-18 at 06 25 55](https://user-images.githubusercontent.com/103432143/179450409-e86f31e6-8484-4165-81b3-1cf37606cddb.png)
+
+CSS file was validated using Jigsaw CSS Validation service, showing no errors or warnings. 
+
+![Screenshot 2022-07-18 at 06 26 29](https://user-images.githubusercontent.com/103432143/179450507-1ce9028e-9455-43ef-b21d-96dd496f031d.png)
+
+The JS files were run through JSHint, showing no significant warnings. 
+
+![Screenshot 2022-07-18 at 06 35 54](https://user-images.githubusercontent.com/103432143/179450600-564c8017-5467-440c-b6a3-8c9b9437ddb5.png)
+
+The above refers to a piece of code that was borrowed from the Love Maths Walkthrough and doesn't seem to effect the overall functionality of the app.
+
+
+
+
 
 
 
