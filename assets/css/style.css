@@ -10,371 +10,373 @@
 /* Body of website */
 
 body {
-    background: url("../images/empire-of-noxus.jpeg") no-repeat center center;
-    background-size: cover;
-    background-color: #243356;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5rem;
-    color: #0c1322;
+	background: url("../images/empire-of-noxus.jpeg") no-repeat center center;
+	background-size: cover;
+	background-color: #243356;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.5rem;
+	color: #0c1322;
 }
 
 /* Logo */
 
 header {
-    margin: 30px;
+	margin: 30px;
 }
 
 /* Headings */
 
-h1, h2 {
-    font-family: "Bitter", serif;
-    text-transform: uppercase;
-    font-weight: 600;
+h1,
+h2 {
+	font-family: "Bitter", serif;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 h1 a {
-    text-decoration: none;
-    color: rgb(233, 238, 240);
+	text-decoration: none;
+	color: rgb(233, 238, 240);
 }
 
 h2 {
-    text-align: center;
-    padding-bottom: 30px;
-    color: #243356;
+	text-align: center;
+	padding-bottom: 30px;
+	color: #243356;
 }
 
 /* Where most of the content of the website will end up */
 
 .introduction,
 .content {
-    max-width: 800px;
-    margin: 150px auto;
-    padding: 100px;
-    background-color: rgba(233, 238, 240, 0.8);
-    letter-spacing: 0.1rem;
-    text-align: justify;
+	max-width: 800px;
+	margin: 150px auto;
+	padding: 100px;
+	background-color: rgba(233, 238, 240, 0.8);
+	letter-spacing: 0.1rem;
+	text-align: justify;
 }
 
 .content {
-    border: 10px solid #243356;
+	border: 10px solid #243356;
 }
 
 /* Landing page */
 
 li {
-    list-style-type: none;
-    padding: 10px 0;
-    text-align: justify;
+	list-style-type: none;
+	padding: 10px 0;
+	text-align: justify;
 }
 
 i {
-    color:#243356;
+	color: #243356;
 }
 
 h3 {
-    text-align: center;
-    font-weight: 400;
+	text-align: center;
+	font-weight: 400;
 }
 
 /* Ready button */
 
 section .ready {
-    text-align: center;
-    margin-top: 80px;
+	text-align: center;
+	margin-top: 80px;
 }
 
 .ready a {
-    text-decoration: none;
-    padding: 20px;
-    background-color:#243356;
+	text-decoration: none;
+	padding: 20px;
+	background-color: #243356;
 }
 
 /* Quiz page */
 
 label {
-    display: block;
-    padding: 10px 0;
+	display: block;
+	padding: 10px 0;
 }
 
 /* Button styling */
 
 button {
-    margin: 20px;
-    padding: 20px;
-    background-color: #243356;
+	margin: 20px;
+	padding: 20px;
+	background-color: #243356;
 }
 
 .ready a,
 #submit,
 #retry {
-    text-decoration: none;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: rgb(233, 238, 240);
+	text-decoration: none;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: rgb(233, 238, 240);
 }
 
 /* Button styling on mouse hover */
 
 .nav-btn:hover,
 .ready a:hover {
-    background-color: rgb(61, 136, 136);
-    cursor: pointer;
+	background-color: rgb(61, 136, 136);
+	cursor: pointer;
 }
 
 #quiz-area label:hover {
-    cursor: pointer;
-    color: rgb(61, 136, 136);
-    font-weight: bold;
+	cursor: pointer;
+	color: rgb(61, 136, 136);
+	font-weight: bold;
 }
 
 main #quiz-btn {
-    text-align: center;
+	text-align: center;
 }
 
 /* Body of second page with different background image */
 
 .pg-two {
-    background: url("../images/shadow-isles-vaults.jpeg") no-repeat center center;
-    background-size: cover;
-    background-color: #243356;
-    min-height: 100vh;
+	background: url("../images/shadow-isles-vaults.jpeg") no-repeat center center;
+	background-size: cover;
+	background-color: #243356;
+	min-height: 100vh;
 }
 
 /* The container for the quiz questions and answers */
 
 .page {
-    padding: 30px;
+	padding: 30px;
 }
 
 .question {
-    padding: 10px;
-    height: 10px;
-    width: 700px;
-    margin-bottom: 50px;
-    text-align: justify;
+	padding: 10px;
+	height: 10px;
+	width: 700px;
+	margin-bottom: 50px;
+	text-align: justify;
 }
 
 .answers {
-    padding: 20px;
+	padding: 20px;
 }
 
 /* Progress bar */
 
 #progress-bar {
-    width: 100%;
-    height: 2.5rem;
-    background-color: rgb(157, 165, 183);
-    margin-top: 50px;
+	width: 100%;
+	height: 2.5rem;
+	background-color: rgb(157, 165, 183);
+	margin-top: 50px;
 }
 
 #current-progress {
-    width: 5%;
-    height: 2.5rem;
-    background-color: #243356;
+	width: 5%;
+	height: 2.5rem;
+	background-color: #243356;
 }
 
 /* External link to lol website */
 
 div #lol-web {
-    padding: 30px 150px;
+	padding: 30px 150px;
 }
 
 #lol-web a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #1d4359;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #1d4359;
 }
 
 a span:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* Score area */
 
 #score-area {
-    max-width: 750px;
-    text-align: center;
-    padding-top: 50px;
+	max-width: 750px;
+	text-align: center;
+	padding-top: 50px;
 }
 
 /* Certificate page */
 
 #pg-three {
-    background: url("../images/mount-targon.jpeg") no-repeat center center;
-    background-color:#243356;
-    background-size: cover;
-    color:rgb(233, 238, 240);
-    min-height: 100vh;
+	background: url("../images/mount-targon.jpeg") no-repeat center center;
+	background-color: #243356;
+	background-size: cover;
+	color: rgb(233, 238, 240);
+	min-height: 100vh;
 }
 
 #pg-three h1 {
-    font-size: 3rem;
-    background-color: rgba(36, 51, 86, 0.2);
+	font-size: 3rem;
+	background-color: rgba(36, 51, 86, 0.2);
 }
 
 #a-legend {
-    margin: 200px auto 0;
-    padding: 10px;
-    width: 50%;
-    font-size: 3rem;
-    text-align: center;
-    font-family: "Bitter", serif;
-    background-color: rgba(36, 51, 86, 0.2);
+	margin: 200px auto 0;
+	padding: 10px;
+	width: 50%;
+	font-size: 3rem;
+	text-align: center;
+	font-family: "Bitter", serif;
+	background-color: rgba(36, 51, 86, 0.2);
 }
 
 /* Link to certificate */
 
 .get-certified {
-    margin-left: 35%;
+	margin-left: 35%;
 }
 
 .get-certified a {
-    color: #1d4359;
-    text-decoration: none;
-    font-weight: bolder;
-    padding: 30px;
+	color: #1d4359;
+	text-decoration: none;
+	font-weight: bolder;
+	padding: 30px;
 }
 
 .get-certified a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* Media queries */
 
 /* For screen sizes 1000px and below */
 @media screen and (max-width: 1000px) {
-    .question {
-        width: 600px;
-    }
+	.question {
+		width: 600px;
+	}
 
-    div #lol-web {
-        padding: 30px 80px;
-    }
+	div #lol-web {
+		padding: 30px 80px;
+	}
 }
 
 /* For screen sizes 800px and below */
 @media screen and (max-width: 800px) {
-    body { 
-        font-size: 1.25rem;
-    }
+	body {
+		font-size: 1.25rem;
+	}
 
-    .question {
-        width: 500px;
-        height: 40px;
-    }
+	.question {
+		width: 500px;
+		height: 40px;
+	}
 
-    #submit, 
-    #retry {
-        font-size: 1.25rem;
-    }
+	#submit,
+	#retry {
+		font-size: 1.25rem;
+	}
 
-    div #lol-web {
-        padding: 30px 50px;
-    }
+	div #lol-web {
+		padding: 30px 50px;
+	}
 }
 
 /* For screen sizes 700px and below */
 @media screen and (max-width: 700px) {
 
-    body,
-    .ready a { 
-        font-size: 1rem;
-    }
+	body,
+	.ready a {
+		font-size: 1rem;
+	}
 
-    .page {
-        padding: 15px;
-    }
+	.page {
+		padding: 15px;
+	}
 
-    button {
-        padding: 15px;
-    }
+	button {
+		padding: 15px;
+	}
 
-    .question {
-        width: 400px;
-    }
+	.question {
+		width: 400px;
+	}
 }
 
 /* For screen sizes 615px and below */
 @media screen and (max-width: 615px) {
 
-    .question {
-        width: 320px;
-        height: 60px;
-    }
+	.question {
+		width: 320px;
+		height: 60px;
+	}
 
-    #submit, 
-    #retry {
-        font-size: 1rem;
-    }
+	#submit,
+	#retry {
+		font-size: 1rem;
+	}
 
-    #lol-web {
-        width: 200px;
-    }
+	#lol-web {
+		width: 200px;
+	}
 }
 
 /* For screen 500px and below */
 @media screen and (max-width: 500px) {
-    body {
-        letter-spacing: 0.05rem;
-    }
+	body {
+		letter-spacing: 0.05rem;
+	}
 
-    .introduction,
-    li {
-        text-align: center;
-    }
-    .question {
-        width: 250px;
-        height: 70px;
-        text-align: left;
-    }
+	.introduction,
+	li {
+		text-align: center;
+	}
 
-    .answers {
-        width: 200px;
-    }
+	.question {
+		width: 250px;
+		height: 70px;
+		text-align: left;
+	}
 
-    #submit, 
-    #retry {
-        font-size: 1rem;
-    }
+	.answers {
+		width: 200px;
+	}
 
-    div #lol-web {
-        padding: 30px 10px
-    }
-    
-    .swal2-html-container,
-    .swal2-title {
-        letter-spacing: normal;
-    }
+	#submit,
+	#retry {
+		font-size: 1rem;
+	}
+
+	div #lol-web {
+		padding: 30px 10px
+	}
+
+	.swal2-html-container,
+	.swal2-title {
+		letter-spacing: normal;
+	}
 }
 
 /* For screen sizes 450px and below */
 
 @media screen and (max-width: 450px) {
-    body {
-        font-size: 0.8rem;
-    }
+	body {
+		font-size: 0.8rem;
+	}
 
-    .question {
-        width: 175px;
-    }
+	.question {
+		width: 175px;
+	}
 }
 
 /* For screen sizes 400px and below */
 @media screen and (max-width: 400px) {
 
-    .page {
-        padding: 0;
-    }
-    
-    .question {
-        width: 125px;
-    }
+	.page {
+		padding: 0;
+	}
 
-    button {
-        padding: 5px;
-    }
+	.question {
+		width: 125px;
+	}
 
-    #lol-web {
-        width: 170px;
-    }
+	button {
+		padding: 5px;
+	}
+
+	#lol-web {
+		width: 170px;
+	}
 }
