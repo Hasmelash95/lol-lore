@@ -236,6 +236,74 @@ PASS - The quiz includes questions about the characters in the Arcane series so 
 5. I wish to get my friends into League of Legends lore and wish to find an easily accessible method to do so.
 PASS - The "Restart Quiz" button allows users to attempt the quiz as many times as they'd like, at any point, with their scores being reset. Users can share the quiz with their friends, who can learn in the process as well as gain access to the link to the lore website once they complete the quiz. 
 
+## Technologies Used 
+
+HTML5
+
+CSS3
+
+Git
+
+Gitpod
+
+Github
+
+Balsamiq Wireframes
+
+JavaScript ES6
+
+SweetAlert2
+
+## Deployment 
+
+1. Log on to Github.  
+1. Set up Github Pages by clicking on the Settings tab, clicking on 'Pages' under 'code and automation'. Change the branch under 'Source' from 'None' to 'Main'. Click on 'Save'.
+2. Navigate to the page now using ```(https://hasmelash95.github.io/lol-lore/)```
+3. Ensure the directory is in the correct location to commit the changes to the right place. 
+4. Use Git to commit changes from Gitpod by typing 'git add .' for every feature added and changes made and 'git commit -m "message here" ' on the Gitpod terminal with a clear but concise message explaining the changes made. 
+5. Type 'git push' and refresh the website (updates may take a few minutes) and the changes will appear on the deployed site. Github Pages will pick up the latest commit pushed to the main branch.
+
+To clone the repository: 
+1. Log on to your Github account and head to the main page of the repository you wish to clone. 
+2. Click on the 'Code' button above the list of files and choose from HTTPS, SSH or Github CLI, to copy the URL provided. 
+3. Open terminal and ensure you are in the correct location. 
+4. Type in 'git clone' and paste the URL you'd copied in step 2 and press enter. 
+
+## Acknowledgements
+
+I would like to thank my friend, Victoria, for her help and support during the JS process. It was my first experience with the language and her help really bolstered my confidence. 
+
+My mentor Brian Macharia for the useful tips and reminders, as well as advice on how to make the app user-friendly and aesthetically appealing. 
+
+League of Legends fans who gave the quiz a try and let me know of any mistakes made on my own end.
+
+Code Institute learning material for teaching me the languages used and helping me to gain a better understanding with their walkthroughs. The event listeners on page load was derived from the Love Maths tutorial. 
+
+[Site Point](https://www.sitepoint.com/simple-javascript-quiz/) - from which I got a huge help with the output of my quiz data (borrowing some of their code, with adjustments, to do so). 
+
+[Simple Steps Code](https://simplestepscode.com/javascript-quiz-tutorial/)
+
+[W3Schools](https://www.w3schools.com)
+
+[MDN](https://developer.mozilla.org/en-US)
+
+[SweetAlert2](https://sweetalert2.github.io)
+
+Elomasney - for introducing me to SweetAlert2 through their project.
+
+[Universe of League of Legends](https://universe.leagueoflegends.com/en_gb)
+
+Background Images from:
+
+[Noxus - Landing Page](https://universe.leagueoflegends.com/en_GB/region/noxus/?mv=image-gallery)
+
+[Shadow Isles - Quiz Page](https://universe.leagueoflegends.com/en_GB/region/shadow-isles/?mv=image-gallery)
+
+[Targon - Certificate](https://universe.leagueoflegends.com/en_GB/region/mount-targon/?mv=image-gallery-1)
+
+
+
+
 
 
 
