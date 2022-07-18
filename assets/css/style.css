@@ -8,6 +8,7 @@
 }
 
 /* Body of website */
+
 body {
     background: url("../images/empire-of-noxus.jpeg") no-repeat center center;
     background-size: cover;
@@ -18,11 +19,13 @@ body {
 }
 
 /* Logo */
+
 header {
     margin: 30px;
 }
 
 /* Headings */
+
 h1, h2 {
     font-family: "Bitter", serif;
     text-transform: uppercase;
@@ -41,6 +44,7 @@ h2 {
 }
 
 /* Where most of the content of the website will end up */
+
 .introduction,
 .content {
     max-width: 800px;
@@ -72,27 +76,32 @@ h3 {
     font-weight: 400;
 }
 
+/* Ready button */
+
 section .ready {
     text-align: center;
     margin-top: 80px;
-}
-
-/* Quiz page */
-label {
-    display: block;
-    padding: 10px 0;
-}
-
-button {
-    margin: 20px;
-    padding: 20px;
-    background-color: #243356;
 }
 
 .ready a {
     text-decoration: none;
     padding: 20px;
     background-color:#243356;
+}
+
+/* Quiz page */
+
+label {
+    display: block;
+    padding: 10px 0;
+}
+
+/* Button styling */
+
+button {
+    margin: 20px;
+    padding: 20px;
+    background-color: #243356;
 }
 
 .ready a,
@@ -103,6 +112,8 @@ button {
     line-height: 2rem;
     color: rgb(233, 238, 240);
 }
+
+/* Button styling on mouse hover */
 
 .nav-btn:hover,
 .ready a:hover {
@@ -121,12 +132,15 @@ main #quiz-btn {
 }
 
 /* Body of second page with different background image */
+
 .pg-two {
     background: url("../images/shadow-isles-vaults.jpeg") no-repeat center center;
     background-size: cover;
     background-color: #243356;
     min-height: 100vh;
 }
+
+/* The container for the quiz questions and answers */
 
 .page {
     padding: 30px;
@@ -144,6 +158,8 @@ main #quiz-btn {
     padding: 20px;
 }
 
+/* Progress bar */
+
 #progress-bar {
     width: 100%;
     height: 2.5rem;
@@ -156,6 +172,8 @@ main #quiz-btn {
     height: 2.5rem;
     background-color: #243356;
 }
+
+/* External link to lol website */
 
 div #lol-web {
     padding: 30px 150px;
@@ -171,11 +189,15 @@ a span:hover {
     text-decoration: underline;
 }
 
+/* Score area */
+
 #score-area {
     max-width: 750px;
     text-align: center;
     padding-top: 50px;
 }
+
+/* Certificate page */
 
 #pg-three {
     background: url("../images/mount-targon.jpeg") no-repeat center center;
@@ -199,6 +221,8 @@ a span:hover {
     font-family: "Bitter", serif;
     background-color: rgba(36, 51, 86, 0.2);
 }
+
+/* Link to certificate */
 
 .get-certified {
     margin-left: 35%;
