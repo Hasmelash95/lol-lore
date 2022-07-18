@@ -4,6 +4,8 @@
 
 A quiz for fans of the multiplayer online battle arena game created and developed by Riot Games. The world of League of Legends holds over 140 champions, each with unique backstories, from thirteen different regions with fleshed out lore. The wildly successful Netflix show Arcane, based on the characters in the regions of Piltover and Zaun, has drawn interest from the general public in the lore of LoL. This quiz is designed for fans of the game lore, fans of the game who wish to know about the lore or anyone interested in the world of LoL, to test their knowledge and learn new things. 
 
+![Screenshot 2022-07-18 at 19 16 43](https://user-images.githubusercontent.com/103432143/179576357-d0feb464-569a-4095-8466-d4b9347599eb.png)
+
 ## Table of Contents
 
 ## User Experience (UX)
@@ -188,6 +190,28 @@ Certificate:
 ![Screenshot 2022-07-18 at 07 47 48](https://user-images.githubusercontent.com/103432143/179458045-30b0498c-3374-42ae-a27f-63a5df5b0fa6.png)
 
 ![Screenshot 2022-07-18 at 07 48 21](https://user-images.githubusercontent.com/103432143/179458052-2858dd3b-b55a-4f98-afb4-8d62ffd53d60.png)
+
+### Responsive Design
+
+#### Landing Page
+
+![Screenshot 2022-07-18 at 19 22 13](https://user-images.githubusercontent.com/103432143/179578960-bce6fe05-8c26-4768-9217-48cbadd01da0.png)
+
+#### Quiz Page 
+
+![Screenshot 2022-07-18 at 19 26 04](https://user-images.githubusercontent.com/103432143/179578989-2b8647ab-20c0-4e11-8934-401d27ef3406.png)
+
+#### Quiz Score 
+
+![Screenshot 2022-07-18 at 19 30 35](https://user-images.githubusercontent.com/103432143/179579046-34317ab6-9ded-4c8d-bf41-1d55a01f72e7.png)
+
+#### Certificate 
+
+![Screenshot 2022-07-18 at 19 32 15](https://user-images.githubusercontent.com/103432143/179579088-fdedc745-8789-4dcc-881f-f7436d393de0.png)
+
+
+
+
 
 
 
