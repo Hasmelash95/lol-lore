@@ -378,6 +378,9 @@ a span:hover {
 
 	#lol-web {
 		width: 170px;
+	}
+
+	div #lol-web {
 		padding: 30px 0;
 	}
 }
