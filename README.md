@@ -163,6 +163,22 @@ The JS files were run through JSHint, showing no significant warnings.
 
 The above refers to a piece of code that was borrowed from the Love Maths Walkthrough and doesn't seem to effect the overall functionality of the app.
 
+### Performance
+
+Lighthouse tests were carried out (using Developer Tools) on all three pages (including the Certificate page).
+
+Landing Page: 
+
+![Screenshot 2022-07-18 at 06 39 18](https://user-images.githubusercontent.com/103432143/179451266-c024ef3d-096b-4a49-ad33-a31180b553fc.png)
+
+Quiz Page: 
+
+![Screenshot 2022-07-18 at 06 40 17](https://user-images.githubusercontent.com/103432143/179451280-fd691d7d-857f-4cab-bc74-3a073f833b24.png)
+
+Certificate: 
+
+![Screenshot 2022-07-18 at 06 42 42](https://user-images.githubusercontent.com/103432143/179451289-5d9dd487-a732-4868-9d18-4b53dcf4205f.png)
+
 
 
 
