@@ -179,6 +179,17 @@ Certificate:
 
 ![Screenshot 2022-07-18 at 06 42 42](https://user-images.githubusercontent.com/103432143/179451289-5d9dd487-a732-4868-9d18-4b53dcf4205f.png)
 
+### Functionality
+
+![Screenshot 2022-07-18 at 07 46 52](https://user-images.githubusercontent.com/103432143/179457985-0fea0577-9adb-479a-a182-b2781dbfcf7e.png)
+
+![Screenshot 2022-07-18 at 07 47 25](https://user-images.githubusercontent.com/103432143/179458000-c7e31be0-0631-46ff-8999-c24945a8dc4b.png)
+
+![Screenshot 2022-07-18 at 07 47 48](https://user-images.githubusercontent.com/103432143/179458045-30b0498c-3374-42ae-a27f-63a5df5b0fa6.png)
+
+![Screenshot 2022-07-18 at 07 48 21](https://user-images.githubusercontent.com/103432143/179458052-2858dd3b-b55a-4f98-afb4-8d62ffd53d60.png)
+
+
 
 
 
