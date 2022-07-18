@@ -56,17 +56,17 @@ On clicking "submit answer" after the final question, the quiz area text will be
 
 [Quiz Page](https://user-images.githubusercontent.com/103432143/179371643-49a53800-85f6-4aea-bdab-2465ad055d96.png)
 
-[Quiz Page mob](https://user-images.githubusercontent.com/103432143/179371662-2cce353c-3647-48fc-8e14-45f2d3f081e6.png)
+[Quiz Page mobile](https://user-images.githubusercontent.com/103432143/179371662-2cce353c-3647-48fc-8e14-45f2d3f081e6.png)
 
 [Quiz Score](https://user-images.githubusercontent.com/103432143/179371666-ffe3703c-a0e7-44cc-937d-a91a8cdbc2b7.png)
 
-[Quiz Score mob](https://user-images.githubusercontent.com/103432143/179371757-5abb37b0-e772-4d46-ae1f-870e3f4aab83.png)
+[Quiz Score mobile](https://user-images.githubusercontent.com/103432143/179371757-5abb37b0-e772-4d46-ae1f-870e3f4aab83.png)
 
 [Quiz Score with Certificate link](https://user-images.githubusercontent.com/103432143/179371924-ec2ca91a-d310-4c87-936d-bb0381b869dd.png)
 
 [Certificate](https://user-images.githubusercontent.com/103432143/179371761-0f0c971f-d1ac-4134-8326-49c447e90aab.png)
 
-[Certificate mob](https://user-images.githubusercontent.com/103432143/179371763-654d6034-8a13-4ce9-b8a2-1d2b46354892.png)
+[Certificate mobile](https://user-images.githubusercontent.com/103432143/179371763-654d6034-8a13-4ce9-b8a2-1d2b46354892.png)
 
 ### Surface 
 
@@ -143,11 +143,19 @@ The Certificate page uses the background image of Mount Targon - a gruelling jou
 
 Clicking "Restart Quiz" will hide the Certificate link once more. 
 
+### Future Features
+
+Possible features to work on in the future:
+
+1. Giving the user the option of inputting a username which will be displayed on the certificate.
+2. Adding the option of a timed quiz for those who wish for a larger challenge.
+3. Adding more questions and displaying them in random order.
+
 ## Testing 
 
 ### Validation 
 
-HTML files were validated using W3C Markup Validation Service, with all three showing no errors or warnings.
+HTML files were validated using [W3C Markup Validation Service](https://validator.w3.org) with no errors or warnings.
 
 ![Screenshot 2022-07-18 at 06 22 13](https://user-images.githubusercontent.com/103432143/179450383-ed5daba5-986d-473c-9912-6bab24e02289.png)
 
@@ -155,11 +163,11 @@ HTML files were validated using W3C Markup Validation Service, with all three sh
 
 ![Screenshot 2022-07-18 at 06 25 55](https://user-images.githubusercontent.com/103432143/179450409-e86f31e6-8484-4165-81b3-1cf37606cddb.png)
 
-CSS file was validated using Jigsaw CSS Validation service, showing no errors or warnings. 
+CSS file was validated using [Jigsaw](https://jigsaw.w3.org/css-validator) with no errors or warnings. 
 
 ![Screenshot 2022-07-18 at 06 26 29](https://user-images.githubusercontent.com/103432143/179450507-1ce9028e-9455-43ef-b21d-96dd496f031d.png)
 
-The JS files were run through JSHint, showing no significant warnings. 
+The JS files were run through [JSHint](https://jshint.com) with no significant warnings. 
 
 ![Screenshot 2022-07-18 at 06 35 54](https://user-images.githubusercontent.com/103432143/179450600-564c8017-5467-440c-b6a3-8c9b9437ddb5.png)
 
@@ -208,6 +216,8 @@ Certificate:
 #### Certificate 
 
 ![Screenshot 2022-07-18 at 19 32 15](https://user-images.githubusercontent.com/103432143/179579088-fdedc745-8789-4dcc-881f-f7436d393de0.png)
+
+### Browser Compatibility 
 
 
 
