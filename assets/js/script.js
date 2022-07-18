@@ -90,7 +90,7 @@ function checkAnswers() {
    let questionNumber = currentQuestion + 1;
 
    //  As the value for undefined (unchecked) cannot be read, an if statement was added
-   let inputCheck = document.querySelector(`input[name="question${questionNumber}"]:checked`)
+   let inputCheck = document.querySelector(`input[name="question${questionNumber}"]:checked`);
    if (inputCheck) {
       let checked = inputCheck.value;
       if (checked === correctAnswer) {
@@ -199,5 +199,5 @@ function restartQuiz() {
  * For those who score 70% or higher, link to get a certificate will appear at the end.
  */
 function rewardCertificate() {
-   getCertificate.style.display = "block"
+   getCertificate.style.display = "block";
 }
