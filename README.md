@@ -219,6 +219,8 @@ Certificate:
 
 ### Browser Compatibility 
 
+Functional tests were carried out on Google Chrome, Microsoft Edge, Mozilla Firefox, Safari, as well as iOS and Android, passing them all. 
+
 ### User Stories 
 
 1. I'm a huge fan of League of Legends, both the game and the lore and would love to test my knowledge with a challenging but easy to use quiz.
