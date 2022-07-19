@@ -185,7 +185,7 @@ The JS files were run through [JSHint](https://jshint.com) with no significant w
 
 ![Screenshot 2022-07-18 at 06 35 54](https://user-images.githubusercontent.com/103432143/179450600-564c8017-5467-440c-b6a3-8c9b9437ddb5.png)
 
-The above refers to a piece of code that was borrowed from the Love Maths Walkthrough and doesn't seem to effect the overall functionality of the app.
+The above refers to a piece of code that was borrowed from the Love Maths Walkthrough for the page load event listener and doesn't seem to effect the overall functionality of the app.
 
 ### Performance
 
