@@ -272,6 +272,10 @@ a span:hover {
 	div #lol-web {
 		padding: 30px 50px;
 	}
+
+    .get-certified {
+	margin-left: 30%;
+    }
 }
 
 /* For screen sizes 700px and below */
@@ -311,6 +315,10 @@ a span:hover {
 	#lol-web {
 		width: 200px;
 	}
+
+	.get-certified {
+		margin-left: 25%;
+	}
 }
 
 /* For screen 500px and below */
@@ -347,6 +355,10 @@ a span:hover {
 	.swal2-title {
 		letter-spacing: normal;
 	}
+
+	.get-certified {
+		margin-left: 20%;
+	}
 }
 
 /* For screen sizes 450px and below */
@@ -382,5 +394,9 @@ a span:hover {
 
 	div #lol-web {
 		padding: 30px 0;
+	}
+
+	.get-certified {
+		margin-left: 5%;
 	}
 }
