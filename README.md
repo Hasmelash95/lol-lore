@@ -2,13 +2,27 @@
 
 ## League of Legends Lore Quiz
 
+[Check out the live website here.](https://hasmelash95.github.io/lol-lore)
+
 A quiz for fans of the multiplayer online battle arena game created and developed by Riot Games. The world of League of Legends holds over 140 champions, each with unique backstories, from thirteen different regions with fleshed out lore. The wildly successful Netflix show Arcane, based on the characters in the regions of Piltover and Zaun, has drawn interest from the general public in the lore of LoL. This quiz is designed for fans of the game lore, fans of the game who wish to know about the lore or anyone interested in the world of LoL, to test their knowledge and learn new things. 
 
 ![Screenshot 2022-07-18 at 19 16 43](https://user-images.githubusercontent.com/103432143/179576357-d0feb464-569a-4095-8466-d4b9347599eb.png)
 
 ## Table of Contents
 
-## User Experience (UX)
+[User Experience (UX)](#user-experience)
+
+[Features](#features)
+
+[Testing](#testing)
+
+[Technologies Used](#technologies-used)
+
+[Deployment](#deployment)
+
+[Acknowledgements](#acknowledgements)
+
+## User Experience (UX) <a name="user-experience">
 
 ### Strategy
 
@@ -79,7 +93,7 @@ Font awesome icons (a gemstone, to go with the rune theme) were added for the li
 The alert boxes used plugins from sweetalert2, as they are more visually appealing than the default javascript alerts and are easier for the user to read.
 
 
-## Features
+## Features <a name="features">
 
 ### Landing Page
 
@@ -151,7 +165,7 @@ Possible features to work on in the future:
 2. Adding the option of a timed quiz for those who wish for a larger challenge.
 3. Adding more questions and displaying them in random order.
 
-## Testing 
+## Testing <a name="testing">
 
 ### Validation 
 
@@ -238,7 +252,7 @@ PASS - The quiz includes questions about the characters in the Arcane series so 
 5. I wish to get my friends into League of Legends lore and wish to find an easily accessible method to do so.
 PASS - The "Restart Quiz" button allows users to attempt the quiz as many times as they'd like, at any point, with their scores being reset. Users can share the quiz with their friends, who can learn in the process as well as gain access to the link to the lore website once they complete the quiz. 
 
-## Technologies Used 
+## Technologies Used <a name="technologies-used">
 
 HTML5
 
@@ -256,7 +270,7 @@ JavaScript ES6
 
 SweetAlert2
 
-## Deployment 
+## Deployment <a name="deployment">
 
 1. Log on to Github.  
 1. Set up Github Pages by clicking on the Settings tab, clicking on 'Pages' under 'code and automation'. Change the branch under 'Source' from 'None' to 'Main'. Click on 'Save'.
@@ -271,7 +285,7 @@ To clone the repository:
 3. Open terminal and ensure you are in the correct location. 
 4. Type in 'git clone' and paste the URL you'd copied in step 2 and press enter. 
 
-## Acknowledgements
+## Acknowledgements <a name="acknowledgements">
 
 I would like to thank my friend, Victoria, for her help and support during the JS process. It was my first experience with the language and her help really bolstered my confidence. 
 
