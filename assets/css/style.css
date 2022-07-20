@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Open+Sans&display=swap");
 /* Open Sans and Bitter fonts imported from google fonts */
 
 * {
@@ -50,7 +50,7 @@ h2 {
 .content {
 	max-width: 800px;
 	margin: 150px auto;
-	padding: 100px;
+	padding: min(100px, 10%);
 	background-color: rgba(233, 238, 240, 0.8);
 	letter-spacing: 0.1rem;
 	text-align: justify;
@@ -79,7 +79,7 @@ h3 {
 
 /* Ready button */
 
-section .ready {
+main .ready {
 	text-align: center;
 	margin-top: 80px;
 }
