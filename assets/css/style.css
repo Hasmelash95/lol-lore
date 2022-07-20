@@ -355,10 +355,6 @@ a span:hover {
    .swal2-title {
       letter-spacing: normal;
    }
-
-   .get-certified {
-      margin-left: 20%;
-   }
 }
 
 /* For screen sizes 450px and below */
@@ -393,6 +389,6 @@ a span:hover {
    }
 
    .get-certified {
-      margin-left: 5%;
+      margin-left: 20%;
    }
 }
