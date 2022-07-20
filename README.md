@@ -221,11 +221,11 @@ Certificate:
 
 #### Quiz Page 
 
-![Screenshot 2022-07-18 at 19 26 04](https://user-images.githubusercontent.com/103432143/179578989-2b8647ab-20c0-4e11-8934-401d27ef3406.png)
+![Screenshot 2022-07-20 at 07 55 32](https://user-images.githubusercontent.com/103432143/179916888-2f2265d5-89cc-42c4-b0cb-07d8d648e33f.png)
 
 #### Quiz Score 
 
-![Screenshot 2022-07-18 at 19 30 35](https://user-images.githubusercontent.com/103432143/179579046-34317ab6-9ded-4c8d-bf41-1d55a01f72e7.png)
+![Screenshot 2022-07-20 at 08 00 59](https://user-images.githubusercontent.com/103432143/179917750-f18af8c0-c041-4171-bb47-6c96bd7e9abb.png)
 
 #### Certificate 
 
