@@ -37,8 +37,8 @@ currentProgress.style.width = "5%";
 let currentWidth = 5;
 
 /**
- * The displayData function will output the quizData (found in quiz-data.js) and ensure one question is displayed 
- * on the page at a time.
+ * The displayData function will output the quizData (found in quiz-data.js) 
+ * and ensure one question is displayed on the page at a time.
  */
 function displayData() {
 
@@ -82,8 +82,8 @@ function displayData() {
 displayData();
 
 /**
- * On clicking submit the answer will be checked against the correctAnswer defined in this function
- *  and if correct, the score increments by one.
+ * On clicking submit the answer will be checked against the correctAnswer defined in this 
+ * function and if correct, the score increments by one.
  */
 function checkAnswers() {
    let correctAnswer = quizData[currentQuestion].trueAnswer;
@@ -105,8 +105,9 @@ function checkAnswers() {
 }
 
 /**
- * Clicking the submit button will take user to the next question in the array until the final question 
- * where it'll take the user to the display of their final score.
+ * Clicking the submit button will take user to the next question in 
+ * the array until the final question where it'll take the user to the 
+ * display of their final score.
  */
 function nextQuestion() {
    if (currentQuestion === quizData.length - 1) {
@@ -129,7 +130,8 @@ function userProgress() {
 }
 
 /**
- * Clicking submit after selecting the right answer will prompt a Correct! alert with an explanation.
+ * Clicking submit after selecting the right answer will prompt a Correct!
+ *  alert with an explanation.
  */
 function correctAlert() {
    let quiz = quizData[currentQuestion];
@@ -137,7 +139,8 @@ function correctAlert() {
 }
 
 /**
- * Clicking submit after selecting the wrong answer (or no answer) will prompt a Not Quite! alert with an explanation.
+ * Clicking submit after selecting the wrong answer (or no answer) will 
+ * prompt a Not Quite! alert with an explanation.
  */
 function incorrectAlert() {
    let quiz = quizData[currentQuestion];
@@ -145,7 +148,7 @@ function incorrectAlert() {
 }
 
 /**
- * When submit is clicked on final question, quiz area text is replaced with score area text".
+ * When submit is clicked on final question, quiz area text is replaced with score area text.
  */
 function totalScore() {
    // Link to league of legends website
@@ -173,14 +176,16 @@ function totalScore() {
       `);
    } else {
       scoreArea.innerHTML = (`
-      Your final score is ${totalScore}%. You really know your stuff! Well done LoL fan!
+      Your final score is ${totalScore}%. You really know your stuff! 
+      Well done LoL fan!
       `);
       rewardCertificate();
    }
 }
 
 /**
- * When the restart quiz button is clicked, the score reverts to 0 and the user is taken to the first question.
+ * When the restart quiz button is clicked, the score reverts to 0 and the user
+ *  is taken to the first question.
  */
 function restartQuiz() {
    score = 0;
