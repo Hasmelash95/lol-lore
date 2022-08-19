@@ -226,9 +226,10 @@
 ];
 
 /**
- * Code to randomize quiz questions and ensure each 
- * question is displayed just once
+ * Code to randomize quiz questions with every page reload
+ * and ensure each question is displayed once
  */
+
 let shuffledQuestions = [];
 
 while (quizData.length !== 0){

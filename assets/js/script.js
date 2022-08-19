@@ -10,6 +10,8 @@
             checkAnswers();
          } else if (this.getAttribute("data-type") === "retry") {
             restartQuiz();
+         } else if (this.getAttribute("data-type") === "reload") {
+            reloadPage();
          } else {
             // Borrowed from sweetalert2
             Swal.fire("Unknown button");
@@ -67,7 +69,8 @@ function displayData() {
    quizOutput.push(
       `
       <div class = "page">
-        <div class="question"> ${quiz.question} <i class="fa-solid fa-gem"></i> </div>
+        <div class="question"> <span><i class="fa-solid fa-gem"></i></span>
+        ${quiz.question} </div>
         <div class="answers"> ${answers.join("")} </div>
       </div>
       `
@@ -199,6 +202,10 @@ function restartQuiz() {
    userProgress();
    progressBar.style.display = "inline-block";
    getCertificate.style.display = "none";
+}
+
+function reloadPage() {
+   location.reload();
 }
 
 /**
