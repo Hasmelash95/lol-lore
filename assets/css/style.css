@@ -50,7 +50,7 @@ h2 {
 .content {
    max-width: 800px;
    margin: 150px auto;
-   padding: min(100px, 10%);
+   padding: min(70px, 10%);
    background-color: rgba(233, 238, 240, 0.8);
    letter-spacing: 0.1rem;
 }
