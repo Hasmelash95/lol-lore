@@ -28,7 +28,9 @@ const submitButton = document.getElementById("submit");
 const scoreArea = document.getElementById("score-area");
 const progressBar = document.getElementById("progress-bar");
 const currentProgress = document.getElementById("current-progress");
+const shuffleQuiz = document.getElementById("reload");
 const getCertificate = document.getElementById("certificate");
+shuffleQuiz.style.display = "none";
 getCertificate.style.display = "none";
 // Defining some variables that will appear throughout the script
 let currentQuestion = 0;
@@ -118,6 +120,7 @@ function nextQuestion() {
       submitButton.style.display = "none";
       totalScore();
       progressBar.style.display = "none";
+      shuffleQuiz.style.display = "inline-block";
    } else {
       displayData(quizData[currentQuestion++]);
       userProgress();
@@ -204,6 +207,9 @@ function restartQuiz() {
    getCertificate.style.display = "none";
 }
 
+/**
+ * Reloads page, therefore shuffling questions again
+ */
 function reloadPage() {
    location.reload();
 }
