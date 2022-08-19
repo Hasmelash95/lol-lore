@@ -8,7 +8,6 @@
       button.addEventListener("click", function () {
          if (this.getAttribute("data-type") === "submit") {
             checkAnswers();
-            nextQuestion();
          } else if (this.getAttribute("data-type") === "retry") {
             restartQuiz();
          } else {
@@ -96,11 +95,13 @@ function checkAnswers() {
       if (checked === correctAnswer) {
          score++;
          correctAlert();
+         nextQuestion();
       } else {
          incorrectAlert();
+         nextQuestion();
       }
    } else {
-      incorrectAlert();
+      Swal.fire("You must choose an answer!")
    }
 }
 
