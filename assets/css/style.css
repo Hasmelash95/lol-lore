@@ -53,7 +53,6 @@ h2 {
    padding: min(100px, 10%);
    background-color: rgba(233, 238, 240, 0.8);
    letter-spacing: 0.1rem;
-   text-align: justify;
 }
 
 .content {
@@ -65,7 +64,6 @@ h2 {
 li {
    list-style-type: none;
    padding: 10px 0;
-   text-align: justify;
 }
 
 i {
@@ -324,11 +322,6 @@ a span:hover {
 @media screen and (max-width: 500px) {
    body {
       letter-spacing: 0.05rem;
-   }
-
-   .introduction,
-   li {
-      text-align: center;
    }
 
    .question {
