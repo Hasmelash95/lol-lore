@@ -243,6 +243,7 @@ a span:hover {
 @media screen and (max-width: 1000px) {
    .question {
       width: 600px;
+      height: 40px;
    }
 
    div #lol-web {
@@ -258,11 +259,9 @@ a span:hover {
 
    .question {
       width: 500px;
-      height: 40px;
    }
 
-   #submit,
-   #retry {
+   .nav-btn {
       font-size: 1.25rem;
    }
 
@@ -304,8 +303,7 @@ a span:hover {
       height: 60px;
    }
 
-   #submit,
-   #retry {
+   .nav-btn {
       font-size: 1rem;
    }
 
@@ -334,8 +332,7 @@ a span:hover {
       width: 200px;
    }
 
-   #submit,
-   #retry {
+   .nav-btn {
       font-size: 1rem;
    }
 
