@@ -200,6 +200,7 @@ function restartQuiz() {
    displayData();
    submitButton.style.display = "inline-block";
    scoreArea.innerHTML = "";
+   shuffleQuiz.style.display = "none";
    // Progress bar is restarted
    currentWidth = 0;
    userProgress();
