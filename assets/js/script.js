@@ -71,7 +71,10 @@ function displayData() {
    quizOutput.push(
       `
       <div class = "page">
-        <div class="question"> <span><i class="fa-solid fa-gem"></i></span>
+        <div class="question">
+        <span>
+        <i class="fa-solid fa-gem"></i>
+        </span>
         ${quiz.question} </div>
         <div class="answers"> ${answers.join("")} </div>
       </div>
