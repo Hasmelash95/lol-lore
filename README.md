@@ -72,13 +72,13 @@ A "shuffle questions" button will appear after the user sees their score. Clicki
 
 [Quiz Page](https://user-images.githubusercontent.com/103432143/179371643-49a53800-85f6-4aea-bdab-2465ad055d96.png)
 
-[Quiz Page mobile](https://user-images.githubusercontent.com/103432143/179371662-2cce353c-3647-48fc-8e14-45f2d3f081e6.png)
+[Quiz Page mobile](https://github.com/Hasmelash95/lol-lore/blob/main/README-assets/wireframes/quiz-page-mob.png)
 
-[Quiz Score](https://user-images.githubusercontent.com/103432143/179371666-ffe3703c-a0e7-44cc-937d-a91a8cdbc2b7.png)
+[Quiz Score](https://github.com/Hasmelash95/lol-lore/blob/main/README-assets/wireframes/quiz-page-score.png)
 
-[Quiz Score mobile](https://user-images.githubusercontent.com/103432143/179371757-5abb37b0-e772-4d46-ae1f-870e3f4aab83.png)
+[Quiz Score mobile](https://github.com/Hasmelash95/lol-lore/blob/main/README-assets/wireframes/quiz-page-score-mob.png)
 
-[Quiz Score with Certificate link](https://user-images.githubusercontent.com/103432143/179371924-ec2ca91a-d310-4c87-936d-bb0381b869dd.png)
+[Quiz Score with Certificate link](https://github.com/Hasmelash95/lol-lore/blob/main/README-assets/wireframes/quiz-page-score-cert.png)
 
 [Certificate](https://user-images.githubusercontent.com/103432143/179371761-0f0c971f-d1ac-4134-8326-49c447e90aab.png)
 
@@ -218,15 +218,15 @@ Certificate:
 
 #### Landing Page
 
-![Screenshot 2022-07-18 at 19 22 13](https://user-images.githubusercontent.com/103432143/179578960-bce6fe05-8c26-4768-9217-48cbadd01da0.png)
+![Screenshot 2022-09-20 at 14 28 31](https://user-images.githubusercontent.com/103432143/191271103-fe41bd72-f3d0-40cc-ab15-7259b6baac96.png)
 
 #### Quiz Page 
 
-![Screenshot 2022-07-20 at 07 55 32](https://user-images.githubusercontent.com/103432143/179916888-2f2265d5-89cc-42c4-b0cb-07d8d648e33f.png)
+![Screenshot 2022-09-20 at 14 32 30](https://user-images.githubusercontent.com/103432143/191271383-814fe77a-fa24-4177-8893-6be4a09c804a.png)
 
 #### Quiz Score 
 
-![Screenshot 2022-07-20 at 08 00 59](https://user-images.githubusercontent.com/103432143/179917750-f18af8c0-c041-4171-bb47-6c96bd7e9abb.png)
+![Screenshot 2022-09-20 at 14 37 53](https://user-images.githubusercontent.com/103432143/191272664-616fff90-26bc-4eb7-81bb-d9edc5f25362.png)
 
 #### Certificate 
 
