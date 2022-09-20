@@ -184,7 +184,7 @@ CSS file was validated using [Jigsaw](https://jigsaw.w3.org/css-validator) with 
 
 The JS files were run through [JSHint](https://jshint.com) with no significant warnings. 
 
-![Screenshot 2022-07-18 at 06 35 54](https://user-images.githubusercontent.com/103432143/179450600-564c8017-5467-440c-b6a3-8c9b9437ddb5.png)
+![Screenshot 2022-09-20 at 14 06 39](https://user-images.githubusercontent.com/103432143/191266324-08a751ff-3acd-4e12-b69d-fba70fb41549.png)
 
 The above refers to a piece of code that was borrowed from the Love Maths Walkthrough for the page load event listener and doesn't seem to effect the overall functionality of the app.
 
