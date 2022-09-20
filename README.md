@@ -6,7 +6,7 @@
 
 A quiz for fans of the multiplayer online battle arena game created and developed by Riot Games. The world of League of Legends holds over 140 champions, each with unique backstories, from thirteen different regions with fleshed out lore. The wildly successful Netflix show Arcane, based on the characters in the regions of Piltover and Zaun, has drawn interest from the general public in the lore of LoL. This quiz is designed for fans of the game lore, fans of the game who wish to know about the lore or anyone interested in the world of LoL, to test their knowledge and learn new things. 
 
-![191257778-5308007e-6287-48f2-93fb-147c4ff5f7d0](https://user-images.githubusercontent.com/103432143/191257875-7d73bf50-95da-4c75-9461-3243714391b6.png)
+![Screenshot 2022-09-20 at 14 52 10](https://user-images.githubusercontent.com/103432143/191276189-dc9fda7a-d89e-423b-bc32-4a7e30c92ca1.png)
 
 ## Table of Contents
 
@@ -17,6 +17,8 @@ A quiz for fans of the multiplayer online battle arena game created and develope
 [Testing](#testing)
 
 [Technologies Used](#technologies-used)
+
+[Known Bugs](#known-bugs)
 
 [Deployment](#deployment)
 
@@ -206,13 +208,15 @@ Certificate:
 
 ### Functionality
 
-![Screenshot 2022-07-18 at 07 46 52](https://user-images.githubusercontent.com/103432143/179457985-0fea0577-9adb-479a-a182-b2781dbfcf7e.png)
+![Screenshot 2022-09-20 at 15 06 43](https://user-images.githubusercontent.com/103432143/191279844-68f4c798-b4e6-4713-a1ed-e0bc47ecef7f.png)
 
-![Screenshot 2022-07-18 at 07 47 25](https://user-images.githubusercontent.com/103432143/179458000-c7e31be0-0631-46ff-8999-c24945a8dc4b.png)
+![Screenshot 2022-09-20 at 15 06 56](https://user-images.githubusercontent.com/103432143/191279871-6b4657de-712b-4408-8822-d6a2916341be.png)
 
-![Screenshot 2022-07-18 at 07 47 48](https://user-images.githubusercontent.com/103432143/179458045-30b0498c-3374-42ae-a27f-63a5df5b0fa6.png)
+![Screenshot 2022-09-20 at 15 07 14](https://user-images.githubusercontent.com/103432143/191279893-d1f44bfd-563e-43f1-af72-87855da4ed9f.png)
 
-![Screenshot 2022-07-18 at 07 48 21](https://user-images.githubusercontent.com/103432143/179458052-2858dd3b-b55a-4f98-afb4-8d62ffd53d60.png)
+![Screenshot 2022-09-20 at 15 07 36](https://user-images.githubusercontent.com/103432143/191279932-d849f2e6-555d-4b3a-87d7-9790e68d829c.png)
+
+![Screenshot 2022-09-20 at 15 07 45](https://user-images.githubusercontent.com/103432143/191279954-ed7d0ceb-f582-42df-9aad-7d61f8c57a64.png)
 
 ### Responsive Design
 
@@ -256,7 +260,7 @@ PASS - The quiz includes questions about the characters in the Arcane series so 
 
 5. I wish to get my friends into League of Legends lore and wish to find an easily accessible method to do so.
 
-PASS - The "Restart Quiz" button allows users to attempt the quiz as many times as they'd like, at any point, with their scores being reset. Users can share the quiz with their friends, who can learn in the process as well as gain access to the link to the lore website once they complete the quiz. 
+PASS - The "Restart Quiz" button allows users to attempt the quiz as many times as they'd like, at any point, with their scores being reset. "Shuffle Questions" reorders the questions, which makes for more of a challenge for repeat players. Users can share the quiz with their friends, who can learn in the process as well as gain access to the link to the lore website once they complete the quiz. 
 
 ## Technologies Used <a name="technologies-used">
 
@@ -275,6 +279,17 @@ Balsamiq Wireframes
 JavaScript ES6
 
 SweetAlert2
+
+## Known Bugs <a name="known-bugs">
+
+### Fixed Bugs
+
+1. On restarting the game, the progress bar continued to increment. This was fixed by resetting the progress bar value when the restart button was clicked. 
+2. Clicking the "submit answer" allowed the user to proceed to the next question even without picking an answer. An alert now pops up telling the user to choose an answer and they cannot proceed to the next question until they do so. 
+
+### Unfixed Bugs
+
+There are no unfixed bugs remaining on the website. 
 
 ## Deployment <a name="deployment">
 
