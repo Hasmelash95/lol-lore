@@ -238,4 +238,4 @@ while (quizData.length !== 0){
   quizData.splice(randomQuestion, 1);  
   }
 
-quizData = shuffledQuestions
+quizData = shuffledQuestions;

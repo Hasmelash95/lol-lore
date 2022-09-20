@@ -109,7 +109,7 @@ function checkAnswers() {
          nextQuestion();
       }
    } else {
-      Swal.fire("You must choose an answer!")
+      Swal.fire("You must choose an answer!");
    }
 }
 
