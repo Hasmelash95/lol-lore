@@ -78,7 +78,7 @@ A "shuffle questions" button will appear after the user sees their score. Clicki
 
 [Quiz Score](https://github.com/Hasmelash95/lol-lore/blob/main/README-assets/wireframes/quiz-page-score.png)
 
-[Quiz Score mobile](https://github.com/Hasmelash95/lol-lore/blob/5b190815ca5a9701e965187c0c8f61f677d7cc62/README-assets/wireframes/quiz-page-score-mob.png)
+[Quiz Score mobile](https://github.com/Hasmelash95/lol-lore/blob/main/README-assets/wireframes/quiz-page-score-mob.png)
 
 [Quiz Score with Certificate link](https://github.com/Hasmelash95/lol-lore/blob/main/README-assets/wireframes/quiz-page-score-cert.png)
 
